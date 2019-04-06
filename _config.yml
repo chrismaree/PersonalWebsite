@@ -1,26 +1,17 @@
 # Site
-repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
-# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+repository: chrismaree/PersonalWebsite
+favicon: Directory of your favicon (eg. images/favicon.png)(optional)
 
 # Personal info
-name: Your Name
-title: Your job title
-email: Your email (optional)
+name: Chris Maree
+title: Engineer, Technologist, Polymath
+email: christopher.maree@gmail.com
 phone: Your phone number (optional)
-website: Your website (eg. https://google.com)(optional)
+website: chrismaree.io
 
 # Social links
-twitter_username: jekyllrb
-github_username:  jekyll
-dribbble_username: jekyll
-facebook_username: jekyll
-flickr_username: jekyll
-instagram_username: jekyll
-linkedin_username: jekyll
-xing_username: jekyll
-pinterest_username: jekyll
-youtube_username: jekyll
-googleplus_username: +jekyll
+twitter_username: https://twitter.com/ChrisMaree__
+github_username:  https://github.com/chrismaree
 
 # About Section
 # about_title: About Me (Use this to override about section title)

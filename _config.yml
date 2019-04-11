@@ -4,19 +4,22 @@ favicon: Directory of your favicon (eg. images/favicon.png)(optional)
 
 # Personal info
 name: Chris Maree
-title: Engineer, Technologist, Polymath
+title: Electrical Engineer & full stack developer. Into open source software, blockchain and decentralized finance.
 email: christopher.maree@gmail.com
-phone: Your phone number (optional)
 website: chrismaree.io
 
 # Social links
 twitter_username: https://twitter.com/ChrisMaree__
 github_username:  https://github.com/chrismaree
+linkedin_username: https://www.linkedin.com/in/christopher-maree-49463312b/
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: Directory of profile image (eg. images/profile.jpg)
+about_profile_image: Directory of profile image (eg. images/profilePic.jpeg)
 about_content: | # this will include new lines to allow paragraphs
+  Hi, I'm Chris and I am a full stack software developer with interests in blockchain technology and decentralized finance. I've been involved in a number of different projects and startups, you can check them out below. I originally studied electrical engineering and fell in love with crypto & blockchain in 2016. I'm currently doing my masters financial technology because I think that to be suspenseful in the decentralized(open) finance movement one needed an understanding of the fundamental economics to have a maximum long term impact.
+  
+  I'm currently the CIO of [links](http://foobar.com)
   Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
 
   You can even add paragraphs by using empty lines like this and add anything else markdown supports such as

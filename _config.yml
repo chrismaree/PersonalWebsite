@@ -15,19 +15,12 @@ linkedin_username: https://www.linkedin.com/in/christopher-maree-49463312b/
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: Directory of profile image (eg. images/profilePic.jpg)
+about_profile_image: images/profilePic.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, I'm Chris and I am a full stack software developer with interests in blockchain technology and decentralized finance. I've been involved in a number of different projects and startups, you can check them out below. I originally studied electrical engineering and fell in love with crypto & blockchain in 2016. I'm currently doing my masters financial technology because I think that to be suspenseful in the decentralized(open) finance movement one needed an understanding of the fundamental economics to have a maximum long term impact.
+  Hi, I'm Chris and I am a full stack developer with interests in blockchain technology and decentralized finance. I've been involved in a bunch of different opensourced projects and startups, you can check them out below. 
   
-  I'm currently the CIO of [links](http://foobar.com)
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
-
-  You can even add paragraphs by using empty lines like this and add anything else markdown supports such as
-    - Lists
-    - Tables
-    - Links
-    - Images
-
+  I originally studied electrical engineering but fell in love with crypto & blockchain in 2016. I'm currently doing my masters financial technology because I think that to be successful in the decentralized(open) finance movement one needed an understanding of the fundamental economics to have a maximum long term impact in the space.
+  
 # Projects Section
 # projects_title: Projects #(Use this to override about projects section title)
 
@@ -40,9 +33,8 @@ about_content: | # this will include new lines to allow paragraphs
 # More Section
 # more_title: A Little More About Me #(Use this to override about more section title)
 more_content: | # this will include new lines to allow paragraphs
-  This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
-
-  Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+  I also like scuba diving, photography, electronic music and good food.
+  
 
 # Footer
 footer_show_references: true

@@ -42,11 +42,11 @@
       {%- endif -%}
       {{ project.description | strip | markdownify }}
     </div>
-    {% if forloop.last == false %}
-    <div class="text-center">
-      ~~~
-    </div>
-    {% endif %}
+    <!-- {% if forloop.last == false %}
+      <p class="text-center">
+        ~~~
+      </p>
+    {% endif %} -->
 
   </div>
   {% endfor %}

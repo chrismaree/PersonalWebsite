@@ -1,9 +1,21 @@
 # Experience template
 - company: Registree
   link: http://registree.rocks
-  job_title: Job title
-  dates: Date Range (eg. November 2016 - present)
+  job_title: CIO
+  dates: 2018 - Present
+  github: Registreerocks
+  twitter: registree_za
   quote: >
-   Short description of the company (optional)
+   Registree is a decentralized and cryptographically secure student database and platform that connects students, universities and employers. Registree uses a combination of the latest blockchain and distributed database technology so universities can securely store student data in a way that preserves students privacy and allows third parties to query student data. With Registree's platform, students own their data while universities are the sole creators of data which guarantees that the data obtained from the Registree platform is accurate, verified and always 100% authentic.
   description: | # this will include new lines to allow paragraphs
-    Description of role
+    I am currently responsible for building out the Registree's architecture, dev ops, front end and SSI solutions. I am also actively researching the scalability, security and interoperability solutions required to make Registree's ultimate goals a reality.
+- company: Ribbon Blockchain
+  link: http://registree.rocks
+  job_title: Software Engineer Intern
+  dates: 2018 - Present
+  github: Registreerocks
+  twitter: registree_za
+  quote: >
+   some words
+  description: | # this will include new lines to allow paragraphs
+    some other words

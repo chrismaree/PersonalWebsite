@@ -1,8 +1,20 @@
 # Project template
-- name: Project name
-  link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-  github: Github page for project (eg. sproogen/modern-resume-theme)(optional)
+- name: RadiCards
+  link: https://radi.cards
+  github: RadiCards/radi.cards
+  twitter: Radi_Cards
+  medium: radicards
+  podcast: https://anchor.fm/wizardofdapps/episodes/Episode-0-Radi-Cards-with-Lili-Feyerabend--Chris-Maree-e3glv0/a-ac0hp6
+  telegram: https://t.me/RadiCards
+  date: 2018 - Present
   quote: >
-    Short overview of the project (optional)
+    NFT eCards for greater fun and greater good. All income goes to charities working to promote Internet freedom and environmental rights. Under the hood RadiCards is a platform for creating NFT eCards. Ether or DAI can be attached to the eCards and then sent to friends using trustless claimable links.  All other proceeds go to charity. 
   description: | # this will include new lines to allow paragraphs
-    Description about the work on/with the project
+    I was one of the founders of the project and helped build out the initial version for Christmas in 2018. Early 2019 we took the project to a new level integrating claimable links and dai for Chinese new year. I lead up the development for this second iteration and was responsible for the smart contracts and front end design and integration.
+- name: MeterBlock
+  github: https://github.com/chrismaree/meterblock
+  date: 2018
+  quote: >
+    MeterBlock was a collaborative project that created a decentralised platform to facilitate the governance of electrical energy consumption and production, measured and controlled by smart, blockchain-connected power meters. The goal of the project was to build a Proof-of-Concept (PoC) prototype device running on the Ethereum blockchain to facilitate this energy exchange energy governance.
+  description: | # this will include new lines to allow paragraphs
+    This project formed part of my dissertation for my honors degree. It won the [SAIEE National Student Paper Competition](https://www.linkedin.com/feed/update/urn:li:activity:6471431887155011584/) SAIEE National Student Paper Competition as well as the most innovative 4th year project amongst all engineering discipline in my graduate class at Wits in 2018.

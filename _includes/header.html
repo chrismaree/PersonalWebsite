@@ -83,6 +83,14 @@
             </a>
           </li>
         {%- endif -%}
+        {%- if site.telegram_username -%}
+        <li>
+          <a target="_blank" href="https://t.me/{{ site.telegram_username| escape }}"
+            class="button button--sacnite button--round-l">
+            <i class="fa fa-telegram" title="Telegram link"></i>
+          </a>
+        </li>
+        {%- endif -%}
       </ul>
 
       {%- if site.email -%}

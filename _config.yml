@@ -1,10 +1,10 @@
 # Site
 repository: chrismaree/PersonalWebsite
-favicon: Directory of your favicon (eg. images/favicon.png)(optional)
+favicon: images/favicon.png
 
 # Personal info
 name: Chris Maree
-title: Electrical Engineer & full stack developer. Into open source software, blockchain and decentralized finance.
+title: Electrical Engineer & full stack developer. Into open source software, Ethereum and decentralized finance.
 email: christopher.maree@gmail.com
 website: chrismaree.io
 
@@ -12,17 +12,22 @@ website: chrismaree.io
 twitter_username: https://twitter.com/ChrisMaree__
 github_username:  https://github.com/chrismaree
 linkedin_username: https://www.linkedin.com/in/christopher-maree-49463312b/
+telegram_username: chris_maree
 
 # About Section
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/profilePic.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, I'm Chris and I am a full stack developer with interests in blockchain technology and decentralized finance. I've been involved in a bunch of different opensourced projects and startups, you can check them out below. 
-  
-  I originally studied electrical engineering but fell in love with crypto & blockchain in 2016. I'm currently doing my masters financial technology because I think that to be successful in the decentralized(open) finance movement one needed an understanding of the fundamental economics to have a maximum long term impact in the space.
+  Hi 👋! I'm Chris and I am a full stack developer with interests in blockchain technology and decentralized finance. I've been involved in a bunch of different opensourced projects and startups, you can check them out below. 
+    
+  During my bachelors in electrical engineering I discovered blockchain and cryptocurrencies and was immediately sold on the potential they have to radically transform our society. When I started exploring the defi space I realized just how important it is to understand the fundamental economics and financial markets of the traditional world inorder to build a better decentralized financial system. To this end I'm currently doing my masters in financial technology which covers a wide range of relevant fields like blockchain, datascience, software engineering and financial markets topics.
+ 
+  I see blockchain as a technology that empowers people for the first time to challenge the power structures that define our society at a protocol level.
+
+  O and I also like scuba diving, photography, electronic music and good food 🤘🚀.  
   
 # Projects Section
-# projects_title: Projects #(Use this to override about projects section title)
+projects_title: Open Source Projects
 
 # Experience Section
 # experience_title: Experience #(Use this to override about experience section title)
@@ -31,10 +36,10 @@ about_content: | # this will include new lines to allow paragraphs
 # education_title: Education #(Use this to override about education section title)
 
 # More Section
-# more_title: A Little More About Me #(Use this to override about more section title)
-more_content: | # this will include new lines to allow paragraphs
-  I also like scuba diving, photography, electronic music and good food.
-  
+more_title: Hackathons, Papers and Other Projects
+more_content: |
+  *Luna*
+
 
 # Footer
 footer_show_references: true

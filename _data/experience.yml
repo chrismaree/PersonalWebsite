@@ -6,9 +6,9 @@
   github: Registreerocks
   twitter: registree_za
   quote: >
-   Registree is a decentralized and cryptographically secure student database and platform that connects students, universities and employers. Registree uses a combination of the latest blockchain and distributed database technology so universities can securely store student data in a way that preserves students privacy and allows third parties to query student data. With Registree's platform, students own their data while universities are the sole creators of data which guarantees that the data obtained from the Registree platform is accurate, verified and always 100% authentic.
+   Registree is a decentralized and cryptographically secure student database and platform that connects students, universities and employers. Registree uses a combination of blockchain and distributed database technology so universities can securely store student data in a way that preserves students privacy and allows third parties to query student data. With Registree's platform, students own their data while universities are the sole creators of data which guarantees that the data obtained from the Registree platform is accurate, verified and always 100% authentic.
   description: | # this will include new lines to allow paragraphs
-    I am currently responsible for building out the Registree's architecture, dev ops, front end and SSI solutions. I am also actively researching the scalability, security and interoperability solutions required to make Registree's ultimate goals a reality.
+   I am currently responsible for building out the Registree's architecture, dev ops, front end and SSI solutions. I am also actively researching the scalability, security and interoperability solutions required to make Registree's ultimate goals a reality.
 - company: Ribbon Blockchain
   link: http://registree.rocks
   job_title: Software Engineer Intern

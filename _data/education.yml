@@ -1,8 +1,8 @@
 # Education Template
-- name: Institution name
-  dates: Date Range (eg. 2016 - 2019)
-  qualification: Qualifications (eg. BA Performing Arts)
+- name: University Of The Witwatersrand
+  dates: 2015 - 2018
+  qualification: BSc (Eng) Honors, Electrical and Information Engineering. Cum Laude
   quote: >
-    Short institution or course description (optional)
-  description: | # this will include new lines to allow paragraphs
-    Description of qualification
+    The BSC in Electrical Engineering is a 4 year honours level program. It contains a broad mix of courses that cover diverse aspects such as electric circuits, software engineering, microprocessors, telecommunications, electronics and computer networking.
+  description: | 
+    My honors year was focused heavily on blockchain based applications, where I created MeterBlock for my final year project. I focused most of my courses around learning 

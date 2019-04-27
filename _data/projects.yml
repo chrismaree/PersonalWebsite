@@ -13,6 +13,7 @@
     I was one of the founders of the project and helped build out the initial version for Christmas in 2018. Early 2019 we took the project to a new level integrating claimable links and dai for Chinese new year. I lead up the development for this second iteration and was responsible for the smart contracts and front end design and integration.
 - name: MeterBlock
   github: https://github.com/chrismaree/meterblock
+  report: https://github.com/chrismaree/meterblock/blob/master/Documents/Final%20Report.pdf
   date: 2018
   quote: >
     MeterBlock was a collaborative project that created a decentralised platform to facilitate the governance of electrical energy consumption and production, measured and controlled by smart, blockchain-connected power meters. The goal of the project was to build a Proof-of-Concept (PoC) prototype device running on the Ethereum blockchain to facilitate this energy exchange energy governance.

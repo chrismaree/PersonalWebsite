@@ -1,59 +1,61 @@
 <div class="container experience-container">
   <h3>{{ site.experience_title | default: "Experience" }}</h3>
   {% for experience in site.data.experience %}
-    <div class="row clearfix experience">
-      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 col-print-12 left-column">
-        <h4 class="name">
-          {%- if experience.link -%}
-            {% include a.html href=experience.link %}
-          {%- endif -%}
-          {{ experience.company }}
-          {%- if experience.link -%}
-            </a>
-          {%- endif -%}
-          </h4>
-        <p><b>{{ experience.job_title }}</b></p>
-        <p>{{ experience.dates }}</p>
-        {% for job in experience.jobs %}
-          <p><b>{{ job.title }}</b></p>
-          <p>{{ job.dates }}</p>
-        {% endfor %}
-        <p class="no-print">
-          <a href="https://github.com/{{ experience.github }}" target="_blank">
-            <i class="fa fa-github" title="{{ experience.name }} Github link"></i>
-          </a>
-          {%- if experience.twitter -%}
-          <a href="https://twitter.com/{{ experience.twitter }}" target="_blank">
-            <i class="fa fa-twitter" title="{{ experience.name }} twitter link"></i>
-          </a>
-          {%- endif -%}
-          {%- if experience.medium -%}
-          <a href="https://medium.com/{{ experience.medium }}" target="_blank">
-            <i class="fa fa-medium" title="{{ experience.name }} medium link"></i>
-          </a>
-          {%- endif -%}
-          {%- if experience.podcast -%}
-          <a href="{{ experience.podcast }}" target="_blank">
-            <i class="fa fa-podcast" title="{{ experience.name }} podcast link"></i>
-          </a>
-          {%- endif -%}
-          {%- if experience.telegram -%}
-          <a href="{{ experience.telegram }}" target="_blank">
-            <i class="fa fa-telegram" title="{{ experience.name }} telegram link"></i>
-          </a>
-          {%- endif -%}
-        </p>
-      </div>
-      <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10 col-print-12">
-        {%- if experience.quote -%}
-          <p class="quote">{{ experience.quote }}</p>
+  <div class="row clearfix experience">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 col-print-12 left-column">
+      <h4 class="name">
+        {{ experience.company }}
+        {%- if experience.link -%}
+        </a>
         {%- endif -%}
-        {{ experience.description | strip | markdownify }}
-      </div>
+      </h4>
+      <p>{{ experience.dates }}</p>
+      {%- if experience.link -%}
+      {% include a.html href=experience.link class="project-link" %}{{ experience.link }}</a>
+      {%- endif -%}
+      
+      <p><b>{{ experience.job_title }}</b></p>
+      
+      {% for job in experience.jobs %}
+      <p><b>{{ job.title }}</b></p>
+      <p>{{ job.dates }}</p>
+      {% endfor %}
+      <p class="no-print">
+        <a href="https://github.com/{{ experience.github }}" target="_blank">
+          <i class="fa fa-github" title="{{ experience.name }} Github link"></i>
+        </a>
+        {%- if experience.twitter -%}
+        <a href="https://twitter.com/{{ experience.twitter }}" target="_blank">
+          <i class="fa fa-twitter" title="{{ experience.name }} twitter link"></i>
+        </a>
+        {%- endif -%}
+        {%- if experience.medium -%}
+        <a href="https://medium.com/{{ experience.medium }}" target="_blank">
+          <i class="fa fa-medium" title="{{ experience.name }} medium link"></i>
+        </a>
+        {%- endif -%}
+        {%- if experience.podcast -%}
+        <a href="{{ experience.podcast }}" target="_blank">
+          <i class="fa fa-podcast" title="{{ experience.name }} podcast link"></i>
+        </a>
+        {%- endif -%}
+        {%- if experience.telegram -%}
+        <a href="{{ experience.telegram }}" target="_blank">
+          <i class="fa fa-telegram" title="{{ experience.name }} telegram link"></i>
+        </a>
+        {%- endif -%}
+      </p>
     </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10 col-print-12">
+      {%- if experience.quote -%}
+      <p class="quote">{{ experience.quote }}</p>
+      {%- endif -%}
+      {{ experience.description | strip | markdownify }}
+    </div>
+  </div>
   {% endfor %}
-<p class="quote">I also did internships at <a href="https://www.vatit.com/en/" target="_blank">Vat IT</a>,
-  <a href="https://www.entelect.co.za/" target="_blank">Entelect</a> and
-  <a href="https://www.saicomvoice.co.za/" target="_blank">Saicom Voice Services</a>
-  as a software engineer while doing my bachelor's in electrical engineering.</p>
+  <p class="quote">I also did internships at <a href="https://www.vatit.com/en/" target="_blank">Vat IT</a>,
+    <a href="https://www.entelect.co.za/" target="_blank">Entelect</a> and
+    <a href="https://www.saicomvoice.co.za/" target="_blank">Saicom Voice Services</a>
+    as a software engineer while doing my bachelor's in electrical engineering.</p>
 </div>

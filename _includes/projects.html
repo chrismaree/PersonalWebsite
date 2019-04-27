@@ -34,6 +34,11 @@
           <i class="fa fa-telegram" title="{{ project.name }} telegram link"></i>
         </a>
         {%- endif -%}
+        {%- if project.report -%}
+        <a href="{{ project.report }}" target="_blank">
+          <i class="fa fa-paperclip" title="{{ project.name }} report link"></i>
+        </a>
+        {%- endif -%}
       </p>
     </div>
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10 col-print-12">

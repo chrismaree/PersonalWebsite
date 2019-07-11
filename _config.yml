@@ -4,7 +4,7 @@ favicon: images/favicon.png
 
 # Personal info
 name: Chris Maree
-title: Electrical Engineer & full stack developer. Into open source software, Ethereum and decentralized finance.
+title: Electrical Engineer & full stack developer. Passionate about open source software, Blockchain and decentralized finance.
 email: christopher.maree@gmail.com
 website: chrismaree.io
 
@@ -24,21 +24,29 @@ about_content: | # this will include new lines to allow paragraphs
  
   I see blockchain as a technology that empowers people for the first time to challenge the power structures that define our society at a protocol level.
 
-  Oh and I also like scuba diving, photography, electronic music and good food 🤘🚀.  
+  Oh and I also like scuba diving, photography, live music and good food 🤘🚀.  
   
 # Projects Section
 projects_title: Open Source Projects
 
 # Experience Section
-# experience_title: Experience #(Use this to override about experience section title)
+experience_title: Work Experience & Startups #(Use this to override about experience section title)
 
 # Education Section
 # education_title: Education #(Use this to override about education section title)
 
 # More Section
-more_title: Hackathons, Papers and Other Projects
+more_title: Other smaller projects & hackathons
 more_content: |
-  *Luna*
+  MoonSteps  
+  UniCoin
+  CryptoPortfolio Back Tester
+  SnapFund
+  Wits Energy Consumption Optimization Platform
+  EthStarter
+  smart Contract Development Best Practice Paper
+  BlockPoll
+
 
 
 # Footer

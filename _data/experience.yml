@@ -1,6 +1,6 @@
 # Experience template
 - company: Registree
-  link: http://registree.rocks
+  link: registree.rocks
   job_title: CIO
   dates: 2018 - Present
   github: Registreerocks
@@ -10,12 +10,12 @@
   description: | # this will include new lines to allow paragraphs
    I am currently responsible for building out the Registree's architecture, dev ops, front end and SSI solutions. I am also actively researching the scalability, security and interoperability solutions required to make Registree's ultimate goals a reality.
 - company: Ribbon Blockchain
-  link: http://registree.rocks
-  job_title: Software Engineer Intern
+  link: incentives.ribbonblockchain.com
+  job_title: CTO
   dates: 2018 - Present
-  github: Registreerocks
-  twitter: registree_za
+  github: ribbonblockchain
+  twitter: RibbonPlatform
   quote: >
-   some words
+   Ribbon Blockchain is a Public Health Incentives platform that adds a tokenization layer to any national public health system used to channel donated, pledged or sponsored funding for health and wellness related behavioral incentives. Funding is sent directly to patients, community health workers and healthcare practitioners where incentives are used to improve prevention, adherence, quality care delivery and overall population health outcomes. Ribbon Recently received a funding grant from Consensys and is building out its POC in 2019
   description: | # this will include new lines to allow paragraphs
-    some other words
+   I am current leading the development on the Ribbon platform and responsible for the technology architecture design and implementation. I am leading up the research into implementing scalable micropayments using xDAI as well as USSD based on and off ramps for users.

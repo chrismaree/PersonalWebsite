@@ -28,6 +28,10 @@
         {%- include more.html -%}
       {%- endif -%}
 
+      {%- if site.data.otherProjects.size > 0 -%}
+      {%- include other-projects.html -%}
+      {%- endif -%}
+
     </div>
   </main>
 

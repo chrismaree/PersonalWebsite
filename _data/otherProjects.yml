@@ -1,0 +1,24 @@
+# Education Template
+- name: MoonSteps
+  date: 2019
+  link: moonsteps.space
+  github: chrismaree/GainsDapp
+  description: |
+    Dapp to sell crypto at predefined intervals on the way up during a bull run. Dapp calculates all sell prices based on user input and recommends the best strategy to exit your position. Funds are stored in smart contract and automatically traded via Uniswap. Contracts were written in Vyper, front end in VueJS using material UI. Offchain relayers watch the contracts and trustlessly execute trade orders within the contract to preform atomic token swaps on Uniswap.
+- name: UniCoin
+  date: 2019
+  link: unicoin.win
+  github: unicoinlicences/unicoindapp
+  description: |
+    Dapp created as past of masters degree enabling academics to monetize their research for commercial applications while supporting open science. Researches can register on the platform, upload their works and create open auctions for material. Companies can buy license to use the research which mints non-fungible tokens which represent ownership of a licence. Integration done with IPFS for file storage and Orcid for academic profile verification.
+- name: Crypto Back Tester
+  date: 2019
+  github: chrismaree/CryptoPortfolioTester
+  description: |
+    Cryptocurrency backtest to compare different rebalancing and trading strategies. It covers working with crypto price api's to retrieve information, manipulate this information using pandas and numpy into something that can be used in time series computations to implement different trading strategies. Interactive time series plotting is covered using plotly. 
+- name: SnapFund
+  date: 2019
+  link: ethsnap.fund
+  github: constantiam/snap
+  description: |
+    Dapp which creates automatically rebalancing crypto funds in a decentralized and trustless manor. Snap fund leverages decentralized exchanges for automated portfoliorebalancing to maintain a predefined ratio of ERC20 tokens. This project was part of EthCapetown hackathon which we won with this submition.

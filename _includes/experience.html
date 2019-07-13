@@ -44,6 +44,11 @@
           <i class="fa fa-telegram" title="{{ experience.name }} telegram link"></i>
         </a>
         {%- endif -%}
+        {%- if experience.linkedin -%}
+        <a href="https://www.linkedin.com/company/{{ experience.linkedin }}/about" target="_blank">
+          <i class="fa fa-linkedin-square" title="{{ experience.name }} linkedIn link"></i>
+        </a>
+        {%- endif -%}
       </p>
     </div>
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10 col-print-12">

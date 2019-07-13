@@ -5,47 +5,54 @@
     <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 col-print-12 left-column">
       <h4>{{ project.name }}</h4>
       {%- if project.date -%}
-      <p>{{project.date}}<a href="https://github.com/{{ project.github }}" target="_blank" style="padding-left:20px; text-align: center;">
-          <i class="fa fa-lg fa-github" title="{{ project.name }} Github link" style="text-align: center;"></i>
-        </a></p>
-      {%- endif -%}
-      {%- if project.link -%}
-      {% include a.html href=project.link class="project-link" %}{{ project.link }}</a>
-      {%- endif -%}
       <p class="no-print">
-
+        {{project.date}}
+        <a href="https://github.com/{{ project.github }}" target="_blank"
+          style="padding-left:20px; text-align: center;">
+          <i class="fa fa-lg fa-github" title="{{ project.name }} Github link"></i>
+        </a>
         {%- if project.twitter -%}
         <a href="https://twitter.com/{{ project.twitter }}" target="_blank">
-          <i class="fa fa-twitter" title="{{ project.name }} twitter link"></i>
+          <i class="fa fa-lg fa-twitter" title="{{ project.name }} twitter link"></i>
         </a>
         {%- endif -%}
         {%- if project.medium -%}
         <a href="https://medium.com/{{ project.medium }}" target="_blank">
-          <i class="fa fa-medium" title="{{ project.name }} medium link"></i>
+          <i class="fa fa-lg fa-medium" title="{{ project.name }} medium link"></i>
         </a>
         {%- endif -%}
         {%- if project.podcast -%}
         <a href="{{ project.podcast }}" target="_blank">
-          <i class="fa fa-podcast" title="{{ project.name }} podcast link"></i>
+          <i class="fa fa-lg fa-podcast" title="{{ project.name }} podcast link"></i>
         </a>
         {%- endif -%}
         {%- if project.telegram -%}
         <a href="{{ project.telegram }}" target="_blank">
-          <i class="fa fa-telegram" title="{{ project.name }} telegram link"></i>
+          <i class="fa fa-lg fa-telegram" title="{{ project.name }} telegram link"></i>
         </a>
         {%- endif -%}
         {%- if project.report -%}
         <a href="{{ project.report }}" target="_blank">
-          <i class="fa fa-paperclip" title="{{ project.name }} report link"></i>
+          <i class="fa fa-lg fa-paperclip" title="{{ project.name }} report link"></i>
         </a>
         {%- endif -%}
       </p>
+      {%- endif -%}
+      {%- if project.link -%}
+      {% include a.html href=project.link class="project-link" %}{{ project.link }}</a>
+      {%- endif -%}
     </div>
     <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9 col-print-12">
       {%- if project.quote -%}
       <p class="quote">{{ project.quote }}</p>
       {%- endif -%}
       {{ project.description | strip | markdownify }}
+
+      {%- if project.tags -%}
+      {% for tag in project.tags %}
+      <span class="badge badge-secondary">{{ tag }}</span>
+      {% endfor %}
+      {%- endif -%}
     </div>
     <!-- {% if forloop.last == false %}
       <p class="text-center">

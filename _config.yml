@@ -36,21 +36,13 @@ experience_title: Work Experience & Startups #(Use this to override about experi
 # education_title: Education #(Use this to override about education section title)
 
 # More Section
-more_title: Other smaller projects & hackathons
-more_content: |
-  MoonSteps  
-  UniCoin
-  CryptoPortfolio Back Tester
-  SnapFund
-  Wits Energy Consumption Optimization Platform
-  EthStarter
-  smart Contract Development Best Practice Paper
-  BlockPoll
-
+# more_title: Other smaller projects & hackathons
+# more_content: |
+  
 otherProjects_title: Other notable projects, hackathons & papers
 
 # Footer
-footer_show_references: true
+footer_show_references: false
 
 # Build settings
 # theme: modern-resume-theme (Use this is you are hosting your resume yourself)

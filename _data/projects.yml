@@ -16,6 +16,6 @@
   report: https://github.com/chrismaree/meterblock/blob/master/Documents/Final%20Report.pdf
   date: 2018
   quote: >
-    MeterBlock was a collaborative project that created a decentralised platform to facilitate the governance of electrical energy consumption and production, measured and controlled by smart, blockchain-connected power meters. The goal of the project was to build a Proof-of-Concept (PoC) prototype device running on the Ethereum blockchain to facilitate this energy exchange energy governance.
+    MeterBlock was a collaborative project that created a decentralised platform to facilitate the governance of electrical energy consumption and production, measured and controlled by smart, blockchain-connected power meters. The goal of the project was to build a prototype device running on the Ethereum blockchain to facilitate this energy exchange governance.
   description: | # this will include new lines to allow paragraphs
     This project formed part of my dissertation for my honors degree. It won the [SAIEE National Student Paper Competition](https://www.linkedin.com/feed/update/urn:li:activity:6471431887155011584/) SAIEE National Student Paper Competition as well as the most innovative 4th year project amongst all engineering discipline in my graduate class at Wits in 2018.

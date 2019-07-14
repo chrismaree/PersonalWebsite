@@ -15,7 +15,7 @@ linkedin_username: christopher-maree-49463312b
 telegram_username: chris_maree
 
 # About Section
-# about_title: About Me (Use this to override about section title)
+about_title: About me
 about_profile_image: images/profilePic.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi 👋! I'm Chris and I am a full stack developer with interests in blockchain technology and decentralized finance. I've been involved in a bunch of different opensourced projects and startups, you can check them out below. 
@@ -27,10 +27,10 @@ about_content: | # this will include new lines to allow paragraphs
   Oh and I also like scuba diving, photography, live music and good food 🤘🚀.  
   
 # Projects Section
-projects_title: Open Source Projects
+projects_title: Open source projects
 
 # Experience Section
-experience_title: Work Experience & Startups #(Use this to override about experience section title)
+experience_title: Work experience & startups #(Use this to override about experience section title)
 
 # Education Section
 # education_title: Education #(Use this to override about education section title)
@@ -39,7 +39,7 @@ experience_title: Work Experience & Startups #(Use this to override about experi
 # more_title: Other smaller projects & hackathons
 # more_content: |
   
-otherProjects_title: Other notable projects, hackathons & papers
+otherProjects_title: Other Notable projects, hackathons & papers
 
 # Footer
 footer_show_references: false

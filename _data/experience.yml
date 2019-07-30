@@ -1,4 +1,11 @@
 # Experience template
+- company: Ethereum Foundation
+  dates: 2019 - Present
+  job_title:  Devcon Scholar
+  quote: >
+   Selected as a Devcon V Scholar amongst 50 other candidates from around the world to participate in the Ethereum Foundation’s blockchain and cryptocurrency programming.
+  description:
+   Through the leadership program, I accomplished the following: 1) Earned a full scholarship to attend the program in Tokyo, Japan, 2) Developed blockchain 101, theory, and system design skills and completed program’s curriculum, 3) Networked with Ethereum ecosystem leaders and learned how various firms apply blockchain technology to their services and products, 4)Earned a blockchain program certification`
 - company: Registree
   link: registree.rocks
   job_title: CIO
@@ -21,10 +28,3 @@
   description: | # this will include new lines to allow paragraphs
    I am current leading the development on the Ribbon platform and responsible for the technology architecture design and implementation. I am leading up the research into implementing scalable micropayments using xDAI as well as USSD based on and off ramps for users.
   linkedin: ribbonblockchain
-- company: Ethereum Foundation
-  job_title:  Devcon Scholar
-  quote: >
-   Selected as a Devcon V Scholar amongst 50 other candidates from around the world to participate in the Ethereum Foundation’s blockchain and cryptocurrency programming.
-  description:
-   Through the leadership program, I accomplished the following: 1) Earned a full scholarship to attend the program in Tokyo, Japan, 2) Developed blockchain 101, theory, and system design skills and completed program’s curriculum, 3) Networked with Ethereum ecosystem leaders and learned how various firms apply blockchain technology to their services and products, 4)Earned a blockchain program certification
-

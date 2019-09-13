@@ -4,47 +4,47 @@
   link: moonsteps.space
   github: chrismaree/GainsDapp
   description: |
-    Dapp to sell crypto at predefined intervals on the way up during a bull run. Dapp calculates all sell prices based on user input and recommends the best strategy to exit your position. Funds are stored in smart contract and automatically traded via Uniswap. Contracts were written in Vyper, front end in VueJS using material UI. Offchain relayers watch the contracts and trustlessly execute trade orders within the contract to preform atomic token swaps on Uniswap.
+    Dapp to sell crypto at predefined intervals on the way up during a bull run. Dapp calculates all sell prices based on user input and recommends the best strategy to exit your position. Funds are stored in smart contracts and automatically traded via Uniswap. Contracts were written in `Vyper`, front end in `VueJS` using `materialUI`. Offchain relayers watch the contracts and trustlessly execute trade orders within the contract to preform token swaps on `UniSwap`.
   tags: [Blockchain, Dapp, Vyper, Defi]
 - name: UniCoin
   date: 2019
   link: unicoin.win
   github: unicoinlicences/unicoindapp
   description: |
-    Dapp created as past of masters degree enabling academics to monetize their research for commercial applications while supporting open science. Researches can register on the platform, upload their works and create open auctions for material. Companies can buy license to use the research which mints non-fungible tokens which represent ownership of a licence. Integration done with IPFS for file storage and Orcid for academic profile verification.
+    Dapp created as past of masters degree enabling academics to monetize their research for commercial applications while supporting open science. Researches can register on the platform, upload their works and create open auctions for material. Companies can buy licenses to use the research which mints non-fungible tokens(`ERC721`) which represent ownership of a licence. Integration done with `IPFS` for file storage and `Orcid` for academic profile verification.
   tags: [Blockchain, Dapp, Fintech, IPFS]
 - name: Crypto Back Tester
   date: 2019
   github: chrismaree/CryptoPortfolioTester
   description: |
-    Cryptocurrency backtest to compare different rebalancing and trading strategies. It covers working with crypto price api's to retrieve information, manipulate this information using pandas and numpy into something that can be used in time series computations to implement different trading strategies. Interactive time series plotting is covered using plotly.
+    Cryptocurrency backtest to compare different rebalancing and trading strategies. It covers working with crypto price API's to retrieve information, manipulate this information using `pandas` and `numpy` into something that can be used in time series computations to implement different trading strategies. Interactive time series plotting is covered using `plotly`.
   tags: [Blockchain, Fintech, Python, Jupyter Notebooks]
 - name: SnapFund
   date: 2019
   link: ethsnap.fund
   github: constantiam/snap
   description: |
-    Dapp which creates automatically rebalancing crypto funds in a decentralized and trustless manor. Snap fund leverages decentralized exchanges for automated portfoliorebalancing to maintain a predefined ratio of ERC20 tokens. This project was part of EthCapetown hackathon which we won with this submition.
-  tags: [Blockchain, Dapp, Vyper, Defi, Hackathon ]
+    Dapp which creates automatically rebalancing crypto funds in a decentralized and trustless manor. Snap fund leverages decentralized exchanges for automated portfolio rebalancing to maintain a predefined ratio of `ERC20` tokens. This project was part of the EthCapetown hackathon 2019 which we won with this submission.
+  tags: [Blockchain, Dapp, Vyper, Defi, Hackathon]
 - name: Blockchain Art Directory
   date: 2019
   link: blockchainart.directory
   github: chainythings/BAD
   description: |
-    Contributed to the development of the Blockchain Art Directory (BAD) that serves as a service featuring a comprehensive collection of current, future and former projects which are dedicated to blockchain art, crypto collectibles and Non Fungible Tokens. I was responsible for building the search and filtering component of the front end application as a freelancer.
-  tags: [Blockchain, Web Development ]
+    Contributed to the development of the Blockchain Art Directory (`BAD`) that serves as a service featuring a comprehensive collection of current, future and former projects which are dedicated to blockchain art, crypto collectibles and Non Fungible Tokens. I was responsible for building the search and filtering component of the front end application as a freelancer.
+  tags: [Blockchain, Web Development]
 - name: Energy Consumption Optimization Platform
   date: 2018
   github: chrismaree/Energy-Consumption-Optimization-Management-Platform
   description: |
-    Energy consumption vizulization to monitor and optimize energy consumption for a dynamic collection of buildings, such as a university. This a component of my honors thesis at Wits along with MeterBlock.
+    Energy consumption visulization to monitor and optimize energy consumption for a dynamic collection of buildings, such as a university. This a component of my honors thesis at Wits along with meterBlock.
   tags: [Fullstack Web development, Devops, Python, Jupyter Notebooks]
   report: https://github.com/chrismaree/Energy-Consumption-Optimization-Management-Platform/blob/master/Docs/Report.pdf
 - name: EthStarter
   date: 2018
   github: chrismaree/ethstarter
   description: |
-    Decentralized, peer to peer funding platform for creatives, charities and open source projects. Ethstarter enables individuals to create new campaigns and publish them on an open platform. Key campaign logic is stored within Ethereum Smart contracts and additional information (such as images, text and embedded content) is stored on IPFS.
+    Decentralized, peer to peer funding platform for creatives, charities and open source projects. Ethstarter enables individuals to create new campaigns and publish them on an open platform. Key campaign logic is stored within Ethereum Smart contracts and additional information (such as images, text and embedded content) is stored on `IPFS`.
   tags: { Dapp, Solidity, Consensys Academy }
 - name: Smart Contract Development Best Practice Paper
   date: 2018
@@ -53,21 +53,21 @@
     I wrote a paper on the current research into Ethereum smart contract development best practice relating to contract security. Previously hacked contracts are identified and discussed, breaking down exactly how the hack occured. A selection of the latest symbolic execution-based and static analysis tools are then used to analyze these contracts to try and identify the exploited vulnerabilities.
   tags: { Blockchain, Solidity, Security, Wits }
   report: https://github.com/chrismaree/smart-contract-development-best-practice/blob/master/Smart%20Contract%20Development%20Best%20Practice.pdf
-- name: BlockPoll
+- name: blockPoll
   date: 2018
   github: when-moon/blockPoll
-  tags: [Blockchain, Dapp, Solidity, Hackathon ]
+  tags: [Blockchain, Dapp, Solidity, Hackathon]
   description: |
-    blockPoll is a pseudo-anonymous, online, blockchain-based voting tool, used to facilitate organizational-based proxy voting and polling mechanisms for a wide array of uses. Joint first place winner at Unlock the Block Hackathon 2018.
+    blockPoll is a pseudo-anonymous, online, blockchain-based voting tool, used to facilitate organizational-based proxy voting and polling mechanisms for a wide array of uses. Joint first place winner at Unlock the Block Hackathon in Capetown 2018.
 - name: LunaBound
   date: 2018
   github: BLOCKCHAINGERS/LUNABOUND
-  tags: [Blockchain, Dapp, Solidity, Hackathon ]
+  tags: [Blockchain, Dapp, Solidity, Hackathon]
   description: |
-    Co-owned multisignature staking pool for Ethereum’s proof of stake. Was conceptual before ETH2.0 specks were full defined or fleshed out and explored the possibility of staking pools. My team took second place in the Netherlands Blockchaingers hakathon where we created a mechanism for 
+    Co-owned multisignature staking pool for Ethereum’s proof of stake. Was conceptual before ETH2.0 specks were full defined or fleshed out and explored the possibility of staking pools. My team took second place in the Netherlands Blockchaingers hakathon 2018.
 - name: Pango
   date: 2017
   github: PangoProject/PangoSign
-  tags: [Blockchain, Dapp, Solidity ]
+  tags: [Blockchain, Dapp, Solidity]
   description: |
     Started an open-source project providing cryptographically verifiable certificates of authenticity, stored on Ethereum (eg university degrees, on the Blockchain). Was my first intro into Ethereum blockchain, more serious front end development and smart contracts.

@@ -1,11 +1,18 @@
 # Education Template
+- name: $Dai Daddy
+  date: 2019
+  link: https://daidaddy.xyz/
+  github: diffusioncon/Team-30
+  description: |
+    Dai Daddy is an autonomous platform for buying and selling Maker CDPs. Sellers can list their CDP for sale and offer a "discount rate" - less than the 13% fee they would have to pay if forcibly liquidated - which incentivises buyers to provide capital upfront and buy out the seller's debt. In this way it acts like a debt market for makerCDPs. Dai Daddy won the Diffusion 2019 DeFi hackathon track in Berlin.
+  tags: [Blockchain, Dapp, Hackathon, DeFi]
 - name: MoonSteps
   date: 2019
   link: moonsteps.space
   github: chrismaree/GainsDapp
   description: |
     Dapp to sell crypto at predefined intervals on the way up during a bull run. Dapp calculates all sell prices based on user input and recommends the best strategy to exit your position. Funds are stored in smart contracts and automatically traded via Uniswap. Contracts were written in `Vyper`, front end in `VueJS` using `materialUI`. Offchain relayers watch the contracts and trustlessly execute trade orders within the contract to preform token swaps on `UniSwap`.
-  tags: [Blockchain, Dapp, Vyper, Defi]
+  tags: [Blockchain, Dapp, Vyper, DeFi]
 - name: UniCoin
   date: 2019
   link: unicoin.win
@@ -25,7 +32,7 @@
   github: constantiam/snap
   description: |
     Dapp which creates automatically rebalancing crypto funds in a decentralized and trustless manor. Snap fund leverages decentralized exchanges for automated portfolio rebalancing to maintain a predefined ratio of `ERC20` tokens. This project was part of the EthCapetown hackathon 2019 which we won with this submission.
-  tags: [Blockchain, Dapp, Vyper, Defi, Hackathon]
+  tags: [Blockchain, Dapp, Vyper, DeFi, Hackathon]
 - name: Blockchain Art Directory
   date: 2019
   link: blockchainart.directory

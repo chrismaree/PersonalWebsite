@@ -7,7 +7,7 @@
   quote: >
     Cherry Swap is building next generation financial derivatives which leverage the existing DeFi ecosystem to offer pooled interest rate swaps for borrowers and lenders. Through interest rate swaps DeFi users can either secure a fixed rate to borrow or lend against or speculate on changing interest rates in the DeFi lending market. Cherry Swap implements a custom version of a traditional vanilla interest rate swap; hence the name interest rate swaps with a cherry on top.
   description: | # this will include new lines to allow paragraphs
-    I am one of the co-founders of this project and am currently responsible for building out the financial models to build interest rate swaps within the DeFi space. Cherry Swap Won EthBerlin open track prize and has received the Binance X Fellowship.
+    I am one of the co-founders of this project and am currently responsible for building out the financial models to build interest rate swaps within the DeFi space. Cherry Swap won [EthBerlin open track prize](https://twitter.com/ETHBerlin/status/1165632313847365636) and has received the Binance X Fellowship.
 - name: RadiCards
   link: radi.cards
   github: RadiCards/radi.cards

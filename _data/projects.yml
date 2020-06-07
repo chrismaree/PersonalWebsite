@@ -1,4 +1,13 @@
 # Project template
+- name: HoneyLemon
+  link: https://honeylemon.market/
+  github: dapp.honeylemon.market
+  twitter: HoneylemonM
+  date: 2020 - Present
+  quote: >
+    HoneyLemon is creating synthetic Bitcoin cloud mining contracts on top of Ethereum. This enables BTC miners to sell the future payoff from their hash rate which acts as a hedge against volatility in the BTC mining industry. Investors can buy future payoff from cloud mining contracts to gain exposure to the synthetic payoff which. This enables them to get exposure to mining without needing to invest in mining equipment.
+  description: | # this will include new lines to allow paragraphs
+    I am a core contributor and am currently responsible for the smart contracts implementation.
 - name: Cherry Swap
   link: https://cherryswap.xyz
   github: NeapolitanSwaps/CherrySwap
@@ -15,9 +24,9 @@
   medium: radicards
   podcast: https://anchor.fm/wizardofdapps/episodes/Episode-0-Radi-Cards-with-Lili-Feyerabend--Chris-Maree-e3glv0/a-ac0hp6
   telegram: https://t.me/RadiCards
-  date: 2018 - Present
+  date: 2018 - 2019
   quote: >
-    NFT eCards for greater fun and greater good. All income goes to charities working to promote Internet freedom and environmental rights. Under the hood RadiCards is a platform for creating NFT eCards. Ether or DAI can be attached to the eCards and then sent to friends using trustless claimable links.  All other proceeds go to charity. 
+    NFT eCards for greater fun and greater good. All income goes to charities working to promote Internet freedom and environmental rights. Under the hood RadiCards is a platform for creating NFT eCards. Ether or DAI can be attached to the eCards and then sent to friends using trustless claimable links.  All other proceeds go to charity.
   description: | # this will include new lines to allow paragraphs
     I was one of the founders of the project and helped build out the initial version for Christmas in 2018. Early 2019 we took the project to a new level integrating claimable links and DAI intergration for Chinese New Year 2019. I lead up the development for this second iteration and was responsible for the smart contracts and front end design and integration.
 - name: MeterBlock

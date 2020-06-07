@@ -20,11 +20,9 @@ about_profile_image: images/profilePic.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi 👋! I'm Chris and I am a full stack developer with interests in blockchain technology and decentralized finance. I've been involved in a bunch of different opensourced projects and startups, you can check them out below. 
     
-  During my bachelors in Electrical Engineering I re-discovered blockchain and cryptocurrencies and was immediately sold on the potential they have to radically transform our society. When I started exploring the DeFi space I realized just how important it is to understand the fundamental economics and financial markets of the traditional world in order to build a better decentralized financial system. To this end I'm currently doing my Masters in Financial Technology which covers a wide range of relevant fields like blockchain, datascience, software engineering and financial markets topics.
- 
   I see blockchain as a technology that empowers people for the first time to challenge the power structures that define our society at a protocol level.
 
-  Oh and I also like scuba diving, photography, live music and good food 🤘🚀.  
+  Oh and I also like scuba diving, photography, live music and good food 🤘🚀.
   
 # Projects Section
 projects_title: Open source projects

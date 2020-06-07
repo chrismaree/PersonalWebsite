@@ -1,21 +1,21 @@
 # Education Template
 - name: UpsideDai
   date: 2019
-  link: https://upsidedai.com/
+  link: upsidedai.com
   github: Daichotomy/UpSideDai
   description: |
     UpsideDai is a highly leveraged contract for difference (CFD) built on Dai, Uniswap and Maker. This mechanism enables traders and speculators to bet on and hedge against price fluctuations of Dai by buying leveraged long or short positions. The CFD construction enables high leverage (20x) while remaining capital efficient and not requiring high margin requirements (100% collateralization). Positions are priced against the market observable Dai/Usd price by using a combination of the Maker oracle and Uniswap.
   tags: [Blockchain, Dapp, EthDenver Hackathon 2020 winner 🏆, DeFi]
 - name: $DAI Daddy II (Uncensored)
   date: 2019
-  link: https://devpost.com/software/dai-daddy-ii-uncensored
+  link: devpost.com/software/dai-daddy-ii-uncensored
   github: DaddyDeFi/DaiDaddy
   description: |
     DAI Daddy II builds on enabling the unwinding CDPs. Under this model, rather than requiring a counterparty to ensure a CDP is repaid, the new DAI Daddy smart contract withdraws collateral from the CDP, uses Kyber Network to convert this ETH to DAI, and then pays off the CDP and returns the remaining ETH collateral to the owner.
   tags: [Blockchain, Dapp, Kyber DeFi Virtual Hackathon 2019 finalists 🥈, DeFi]
 - name: $DAI Daddy
   date: 2019
-  link: https://daidaddy.xyz/
+  link: daidaddy.xyz
   github: diffusioncon/Team-30
   description: |
     Dai Daddy is an autonomous platform for buying and selling Maker CDPs. Sellers can list their CDP for sale and offer a "discount rate" - less than the 13% fee they would have to pay if forcibly liquidated - which incentivises buyers to provide capital upfront and buy out the seller's debt. In this way it acts like a debt market for makerCDPs.

@@ -1,4 +1,11 @@
 # Education Template
+- name: Mindful-cash
+  date: 2020
+  link: mindful.cash
+  github: mindful.cash-contracts
+  description: |
+    Portfolio Alignment for Degens. With Mindful, you can adopt strategies to mindfully DCA into assets, rebalance your portfolio, and take profits automatically. Let your mindful self plan for your degen self's future. Mindful was built as part of the EthOnline 2020 hackathon where we placed as a finalist and won the Balancer first prize award.
+  tags: [Blockchain, Dapp, EthOnline 2020 winner 🏆, DeFi]
 - name: UpsideDai
   date: 2020
   link: upsidedai.com

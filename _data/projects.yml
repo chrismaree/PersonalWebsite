@@ -30,7 +30,7 @@
   description: | # this will include new lines to allow paragraphs
     I was one of the founders of the project and helped build out the initial version for Christmas in 2018. Early 2019 we took the project to a new level integrating claimable links and DAI intergration for Chinese New Year 2019. I lead up the development for this second iteration and was responsible for the smart contracts and front end design and integration.
 - name: MeterBlock
-  github: https://github.com/chrismaree/meterblock
+  github: chrismaree/meterblock
   report: https://github.com/chrismaree/meterblock/blob/master/Documents/Final%20Report.pdf
   date: 2018
   quote: >

@@ -8,7 +8,7 @@
   tags: [Blockchain, Dapp, EthOnline 2020 winner 🏆, DeFi]
 - name: UpsideDai
   date: 2020
-  link: upsidedai.com
+  link: upsidedai.netlify.app
   github: Daichotomy/UpSideDai
   description: |
     UpsideDai is a highly leveraged contract for difference (CFD) built on Dai, Uniswap and Maker. This mechanism enables traders and speculators to bet on and hedge against price fluctuations of Dai by buying leveraged long or short positions. The CFD construction enables high leverage (20x) while remaining capital efficient and not requiring high margin requirements (100% collateralization). Positions are priced against the market observable Dai/Usd price by using a combination of the Maker oracle and Uniswap.
@@ -29,14 +29,14 @@
   tags: [Blockchain, Dapp, Diffusion DeFi  Hackathon 2019 winner 🏆, DeFi]
 - name: MoonSteps
   date: 2019
-  link: moonsteps.space
+  link: gainsbot.netlify.app
   github: chrismaree/GainsDapp
   description: |
     Dapp to sell crypto at predefined intervals on the way up during a bull run. Dapp calculates all sell prices based on user input and recommends the best strategy to exit your position. Funds are stored in smart contracts and automatically traded via Uniswap. Contracts were written in `Vyper`, front end in `VueJS` using `materialUI`. Offchain relayers watch the contracts and trustlessly execute trade orders within the contract to preform token swaps on `UniSwap`.
   tags: [Blockchain, Dapp, Vyper, DeFi]
 - name: UniCoin
   date: 2019
-  link: unicoin.win
+  link: unicoin-dapp.netlify.app
   github: unicoinlicences/unicoindapp
   description: |
     Dapp created as past of masters degree enabling academics to monetize their research for commercial applications while supporting open science. Researches can register on the platform, upload their works and create open auctions for material. Companies can buy licenses to use the research which mints non-fungible tokens(`ERC721`) which represent ownership of a licence. Integration done with `IPFS` for file storage and `Orcid` for academic profile verification.
@@ -49,7 +49,7 @@
   tags: [Blockchain, Fintech, Python, Jupyter Notebooks]
 - name: SnapFund
   date: 2019
-  link: ethsnap.fund
+  link: snapfund.netlify.app
   github: constantiam/snap
   description: |
     Dapp which creates automatically rebalancing crypto funds in a decentralized and trustless manor. Snap fund leverages decentralized exchanges for automated portfolio rebalancing to maintain a predefined ratio of `ERC20` tokens.

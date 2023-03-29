@@ -1,11 +1,13 @@
 # Experience template
-# - company: Ethereum Foundation
-#   dates: 2019 - Present
-#   job_title:  Devcon Scholar
-#   quote: >
-#    Selected as a Devcon V Scholar amongst 50 other candidates from around the world to participate in the Ethereum Foundation’s blockchain and cryptocurrency programming.
-#   description:
-#    Through the leadership program, I accomplished the following 1) Earned a full scholarship to attend the program in Tokyo, Japan, 2) Developed blockchain 101, theory, and system design skills and completed program’s curriculum, 3) Networked with Ethereum ecosystem leaders and learned how various firms apply blockchain technology to their services and products, 4) Earned a blockchain program certification`
+- company: Hack.vc
+  dates: 2022 - Present
+  job_title: Research Partner
+  link: hack.vc
+  twitter: hack_vc
+  quote: >
+   Based in San Francisco, Hack VC is an early-stage venture capital firm focused on partnering with daring entrepreneurs at the earliest stages. Over the past decade, Hack VC is a shareholder in over 175 startups, including four unicorns.
+  description:
+   I am currently a research partner at Hack VC, helping with prospective investment evaluation and supporting portfolio projects. This is done in a part time capacity.
 - company: UMA Protocol
   link: umaproject.org
   job_title: Senior Software Engineer

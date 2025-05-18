@@ -1,0 +1,241 @@
+/* Terminal cursor animation */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Matrix-inspired text rain animation */
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+                -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+                0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+                -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+                0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+                0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+                -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+                0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+                -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+                0.05em 0 0 rgba(0, 255, 0, 0.75),
+                0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+                0.05em 0 0 rgba(0, 255, 0, 0.75),
+                0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+                -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+                -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* Matrix-like text reveal */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Button hover effects */
+.button--sacnite {
+  position: relative;
+  overflow: hidden;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 255, 170, 0.8);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s cubic-bezier(0.5, 0, 0.5, 1);
+  }
+  
+  &:hover::after {
+    transform: scaleX(1);
+  }
+  
+  &.active {
+    &::before {
+      box-shadow: inset 0 0 0 35px #0a0 !important;
+    }
+    
+    &:hover {
+      color: #0a0;
+      
+      &::before {
+        box-shadow: inset 0 0 0 2px #0a0 !important;
+      }
+    }
+  }
+}
+
+/* Hacker-style animations */
+.navigation-buttons {
+  .button--sacnite {
+    transition: transform 0.2s, color 0.3s, text-shadow 0.3s;
+    
+    &:hover {
+      transform: translateY(-3px);
+      animation: glitch 1.5s infinite alternate-reverse;
+    }
+    
+    &.active {
+      &::before {
+        animation: scanline 5s linear infinite;
+        background: linear-gradient(to bottom, transparent, rgba(0, 255, 0, 0.2), transparent);
+      }
+    }
+  }
+}
+
+/* Add terminal cursor to headings */
+h1, h2 {
+  position: relative;
+  
+  &::after {
+    content: '|';
+    position: absolute;
+    right: -0.5em;
+    animation: blink 1s step-end infinite;
+    color: #0f0;
+    font-weight: 300;
+  }
+}
+
+/* Add green highlight to links */
+a {
+  &:hover {
+    color: #0f0;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.7);
+  }
+}
+
+/* Global styles to create hacker theme */
+body {
+  background-color: #0a0a0a;
+  color: #0f0;
+  text-shadow: 0 0 2px rgba(0, 255, 0, 0.5);
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  z-index: 1000;
+}
+
+/* Scanline effect */
+.scanline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 255, 0, 0.1),
+    transparent
+  );
+  opacity: 0.6;
+  z-index: 1001;
+  pointer-events: none;
+  animation: scanline 8s linear infinite;
+}
+
+/* Glitch text effect */
+.glitch-text {
+  position: relative;
+  text-shadow: 
+    0.05em 0 0 rgba(255, 0, 0, 0.2),
+    -0.05em -0.025em 0 rgba(0, 255, 0, 0.4),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.1);
+  animation: glitch 2.5s infinite alternate-reverse;
+}
+
+/* Matrix-style text scramble effect */
+.button--sacnite::before {
+  transition: all 0.3s;
+}
+
+/* Add some cyberpunk accent colors */
+::selection {
+  background: rgba(0, 255, 0, 0.3);
+  text-shadow: none;
+}
+
+/* Make heading styles more hacker-like */
+h1, h2, h3 {
+  letter-spacing: 2px;
+  color: #0f0;
+  text-transform: uppercase;
+}
+
+/* Specific styling for content areas */
+.wrapper {
+  position: relative;
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  pointer-events: none;
+}
+
+/* Style footer to match theme */
+.footer-container {
+  border-top: 1px solid rgba(0, 255, 0, 0.3);
+  padding-top: 20px;
+}
+
+.footer-container p, 
+.footer-container a {
+  color: rgba(0, 255, 0, 0.7);
+}

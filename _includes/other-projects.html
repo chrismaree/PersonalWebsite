@@ -36,6 +36,11 @@
           <i class="fa fa-lg fa-paperclip" title="{{ project.name }} report link"></i>
         </a>
         {%- endif -%}
+        {%- if project.opensea -%}
+        <a href="{{ project.opensea }}" target="_blank">
+          <i class="fa fa-lg fa-cubes" title="{{ project.name }} OpenSea collection"></i>
+        </a>
+        {%- endif -%}
       </p>
       {%- endif -%}
       {%- if project.link -%}

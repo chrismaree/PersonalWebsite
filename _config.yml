@@ -9,10 +9,10 @@ email: christopher.maree at gmail.com
 website: chrismaree.dev
 
 # Social links
-twitter_username: DeFiChris
+twitter_username: chrismaree_
 github_username:  chrismaree
 linkedin_username: christopher-maree-49463312b
-telegram_username: chris_maree
+telegram_username: IAmChrisMaree
 
 # About Section
 about_title: About me
@@ -25,7 +25,7 @@ about_content: | # this will include new lines to allow paragraphs
   Beyond code, I create art installations, fly drones, explore ocean depths, and seek out live music and culinary adventures. Finding balance through creativity is essential to my process.
   
 # Projects Section
-projects_title: Open source projects
+# projects_title: Open source projects
 
 # Experience Section
 experience_title: Work experience & startups #(Use this to override about experience section title)
@@ -37,7 +37,7 @@ experience_title: Work experience & startups #(Use this to override about experi
 # more_title: Other smaller projects & hackathons
 # more_content: |
   
-otherProjects_title: Other Notable projects, hackathons & papers
+otherProjects_title: Open source projects, Hackathons & papers
 
 # Footer
 footer_show_references: false

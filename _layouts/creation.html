@@ -12,10 +12,10 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
-            <h1 class="creations-title">Creations</h1>
+            <h1 class="creations-title" style="text-align: center; margin-bottom: 1.5rem;">Creations</h1>
             
             <div class="creation-intro">
-              <p>Creating keeps me balanced. It's how I reconnect with myself and explore ideas beyond logic and code. The act of creating — especially with others — has opened up new ways to connect, both outward and inward. It lets me access parts of myself that technical work can't always reach. It keeps me grounded, curious, and open.</p>
+              <p><strong>Creating keeps me balanced.</strong> It's how I reconnect with myself and explore ideas beyond logic and code. The act of creating — especially with others — has opened up new ways to connect, both outward and inward. It lets me access parts of myself that technical work can't always reach. It keeps me grounded, curious, and open.</p>
             </div>
             
             <!-- Scrolling list of creations ordered by date -->
@@ -35,7 +35,18 @@
                     <div class="creation-item">
                       <div class="creation-image-container{% if image.type == 'youtube' %} video-container{% endif %}">
                         {% if image.type == 'youtube' %}
-                          {% assign youtube_id = image.path | split: '/' | last | split: '?' | first %}
+                          {% if image.path contains 'youtu.be' %}
+                            {% assign youtube_id = image.path | split: '/' | last | split: '?' | first %}
+                          {% elsif image.path contains 'youtube.com/watch' %}
+                            {% assign youtube_id = image.path | split: 'v=' | last | split: '&' | first %}
+                          {% elsif image.path contains 'youtube.com/embed' %}
+                            {% assign youtube_id = image.path | split: '/' | last | split: '?' | first %}
+                          {% elsif image.path contains 'youtube.com/shorts' %}
+                            {% assign youtube_id = image.path | split: '/' | last | split: '?' | first %}
+                          {% else %}
+                            {% assign youtube_id = image.path | split: '/' | last | split: '?' | first %}
+                          {% endif %}
+                          
                           {% if image.thumbnail %}
                             <img src="{{ image.thumbnail }}" alt="{{ image.title }}" class="creation-image youtube-thumbnail" data-youtube-id="{{ youtube_id }}">
                           {% else %}
@@ -113,11 +124,28 @@
                 if (img) {
                   // Extract video ID from YouTube thumbnail URL
                   // Format: https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg
-                  const matches = img.src.match(/\/vi\/([^\/]+)\//); // Regex to extract video ID
-                  const videoId = matches && matches[1] ? matches[1] : '';
+                  // Extract the YouTube video ID regardless of the URL format
+                  let videoId = '';
+                  const youtubeUrl = img.dataset.youtubeId || '';
+                  
+                  // If we have a data attribute with the ID, use it
+                  if (youtubeUrl) {
+                    videoId = youtubeUrl;
+                  } else {
+                    // Try to extract from URL
+                    if (img.src.includes('youtu.be/')) {
+                      videoId = img.src.split('youtu.be/')[1].split('?')[0];
+                    } else if (img.src.includes('youtube.com/watch')) {
+                      const urlParams = new URLSearchParams(img.src.split('?')[1]);
+                      videoId = urlParams.get('v');
+                    } else if (img.src.includes('/vi/')) {
+                      const matches = img.src.match(/\/vi\/([^\/]+)\//);
+                      videoId = matches && matches[1] ? matches[1] : '';
+                    }
+                  }
                   
                   currentImages.push({
-                    src: `https://www.youtube.com/embed/${videoId}?modestbranding=1&showinfo=0&rel=0`,
+                    src: `https://www.youtube.com/embed/${videoId}?modestbranding=1&showinfo=0&rel=0&origin=${window.location.origin}`,
                     alt: img.alt,
                     title: title,
                     description: description,
@@ -176,11 +204,18 @@
             // If it's a youtu.be link, convert to embed format
             if (videoSrc.includes('youtu.be')) {
               const videoId = videoSrc.split('/').pop().split('?')[0];
-              videoSrc = `https://www.youtube.com/embed/${videoId}?autoplay=1&modestbranding=1&showinfo=0&rel=0`;
+              videoSrc = `https://www.youtube.com/embed/${videoId}?autoplay=1&modestbranding=1&showinfo=0&rel=0&origin=${window.location.origin}`;
+            } else if (videoSrc.includes('youtube.com/watch')) {
+              const urlParams = new URLSearchParams(videoSrc.split('?')[1]);
+              const videoId = urlParams.get('v');
+              videoSrc = `https://www.youtube.com/embed/${videoId}?autoplay=1&modestbranding=1&showinfo=0&rel=0&origin=${window.location.origin}`;
+            } else if (videoSrc.includes('youtube.com/shorts')) {
+              const videoId = videoSrc.split('/').pop().split('?')[0];
+              videoSrc = `https://www.youtube.com/embed/${videoId}?autoplay=1&modestbranding=1&showinfo=0&rel=0&origin=${window.location.origin}`;
             } else if (!videoSrc.includes('autoplay=1')) {
               // Add autoplay parameter if not already present
               const baseUrl = videoSrc.split('?')[0];
-              videoSrc = `${baseUrl}?autoplay=1&modestbranding=1&showinfo=0&rel=0`;
+              videoSrc = `${baseUrl}?autoplay=1&modestbranding=1&showinfo=0&rel=0&origin=${window.location.origin}`;
             }
             
             // Create iframe for YouTube
@@ -188,10 +223,13 @@
             iframe.className = 'youtube-embed';
             iframe.src = videoSrc;
             iframe.title = item.title;
+            iframe.width = '100%';
+            iframe.height = '100%';
             iframe.setAttribute('frameborder', '0');
             iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
             iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
             iframe.setAttribute('allowfullscreen', '');
+            iframe.setAttribute('loading', 'lazy');
             
             // Add video class to container for styling
             container.classList.add('video-display');

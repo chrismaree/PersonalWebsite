@@ -13,13 +13,280 @@
         <div class="row">
           <div class="col-xs-12">
             <h1 class="creations-title">Creations</h1>
-            <!-- Content for creations will go here -->
-            <p>This page will showcase my creative works.</p>
+            
+            <div class="creation-intro">
+              <p>Creating keeps me balanced. It's how I reconnect with myself and explore ideas beyond logic and code. The act of creating — especially with others — has opened up new ways to connect, both outward and inward. It lets me access parts of myself that technical work can't always reach. It keeps me grounded, curious, and open.</p>
+            </div>
+            
+            <!-- Scrolling list of creations ordered by date -->
+            {% assign sorted_creations = site.data.creations | sort: 'date' | reverse %}
+            {% for creation in sorted_creations %}
+              <div class="creation-section">
+                <div class="creation-header">
+                  <h2 class="creation-category-title">{{ creation.title }}</h2>
+                  {% if creation.event %}
+                  <span class="creation-date">{{ creation.event }}</span>
+                  {% endif %}
+                </div>
+                <p class="creation-description">{{ creation.description }}</p>
+                
+                <div class="creation-gallery">
+                  {% for image in creation.images %}
+                    <div class="creation-item">
+                      <div class="creation-image-container{% if image.type == 'youtube' %} video-container{% endif %}">
+                        {% if image.type == 'youtube' %}
+                          {% assign youtube_id = image.path | split: '/' | last | split: '?' | first %}
+                          {% if image.thumbnail %}
+                            <img src="{{ image.thumbnail }}" alt="{{ image.title }}" class="creation-image youtube-thumbnail" data-youtube-id="{{ youtube_id }}">
+                          {% else %}
+                            <img src="https://i.ytimg.com/vi/{{ youtube_id }}/hqdefault.jpg" alt="{{ image.title }}" class="creation-image youtube-thumbnail" data-youtube-id="{{ youtube_id }}">  
+                          {% endif %}
+                          <div class="video-indicator"></div>
+                        {% else %}
+                          <img src="{{ image.path }}" alt="{{ image.title }}" class="creation-image">
+                        {% endif %}
+                      </div>
+                      <div class="creation-image-info" style="display: none;">
+                        <h3>{{ image.title }}</h3>
+                        <p>{{ image.description }}</p>
+                      </div>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endfor %}
+            
           </div>
         </div>
       </div>
     </div>
   </main>
+  
+  <!-- Fullscreen Image Gallery -->
+  <div class="fullscreen-gallery">
+    <div class="gallery-controls">
+      <div class="gallery-exit-hint">[ press ESC to exit ]</div>
+      <button type="button" class="gallery-prev" aria-label="Previous">&lt;</button>
+      <button type="button" class="gallery-next" aria-label="Next">&gt;</button>
+    </div>
+    <div class="gallery-image-container">
+      <img src="" alt="" class="gallery-image">
+    </div>
+    <div class="gallery-info">
+      <h3 class="gallery-title"></h3>
+      <p class="gallery-description"></p>
+    </div>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Gallery functionality - simplified and more robust
+      function initGallery() {
+        const gallery = document.querySelector('.fullscreen-gallery');
+        const galleryImage = document.querySelector('.gallery-image');
+        const galleryTitle = document.querySelector('.gallery-title');
+        const galleryDescription = document.querySelector('.gallery-description');
+        const prevBtn = document.querySelector('.gallery-prev');
+        const nextBtn = document.querySelector('.gallery-next');
+        
+        let currentImages = [];
+        let currentIndex = 0;
+        
+        // Open gallery on image click
+        document.querySelectorAll('.creation-image-container').forEach(container => {
+          container.addEventListener('click', function(event) {
+            event.preventDefault();
+            const section = this.closest('.creation-section');
+            
+            // Get all images in this section
+            currentImages = [];
+            const items = section.querySelectorAll('.creation-item');
+            items.forEach(item => {
+              const imgContainer = item.querySelector('.creation-image-container');
+              const title = item.querySelector('h3').textContent;
+              const description = item.querySelector('p').textContent;
+              
+              // Check if it's a video or image
+              if (imgContainer.classList.contains('video-container')) {
+                // Get YouTube video ID from thumbnail image
+                const img = imgContainer.querySelector('.youtube-thumbnail');
+                if (img) {
+                  // Extract video ID from YouTube thumbnail URL
+                  // Format: https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg
+                  const matches = img.src.match(/\/vi\/([^\/]+)\//); // Regex to extract video ID
+                  const videoId = matches && matches[1] ? matches[1] : '';
+                  
+                  currentImages.push({
+                    src: `https://www.youtube.com/embed/${videoId}?modestbranding=1&showinfo=0&rel=0`,
+                    alt: img.alt,
+                    title: title,
+                    description: description,
+                    isVideo: true
+                  });
+                }
+              } else {
+                const img = imgContainer.querySelector('.creation-image');
+                if (img) {
+                  currentImages.push({
+                    src: img.src,
+                    alt: img.alt,
+                    title: title,
+                    description: description,
+                    isVideo: false
+                  });
+                }
+              }
+            });
+            
+            // Find index of clicked item
+            const clickedContainer = this;
+            currentIndex = 0; // Default to first image
+            
+            // Find the matching creation-item index
+            for (let i = 0; i < items.length; i++) {
+              if (items[i].querySelector('.creation-image-container') === clickedContainer) {
+                currentIndex = i;
+                break;
+              }
+            }
+            
+            // Load the content (image or video)
+            updateGalleryContent();
+            
+            // Show gallery
+            gallery.classList.add('active');
+            document.body.style.overflow = 'hidden';
+          });
+        });
+        
+        // Function to update gallery content and info
+        function updateGalleryContent() {
+          if (currentImages.length === 0) return;
+          
+          const item = currentImages[currentIndex];
+          const container = document.querySelector('.gallery-image-container');
+          
+          // Clear previous content
+          container.innerHTML = '';
+          
+          // Check if it's a YouTube video or regular image
+          if (item.isVideo) {
+            let videoSrc = item.src;
+            
+            // If it's a youtu.be link, convert to embed format
+            if (videoSrc.includes('youtu.be')) {
+              const videoId = videoSrc.split('/').pop().split('?')[0];
+              videoSrc = `https://www.youtube.com/embed/${videoId}?autoplay=1&modestbranding=1&showinfo=0&rel=0`;
+            } else if (!videoSrc.includes('autoplay=1')) {
+              // Add autoplay parameter if not already present
+              const baseUrl = videoSrc.split('?')[0];
+              videoSrc = `${baseUrl}?autoplay=1&modestbranding=1&showinfo=0&rel=0`;
+            }
+            
+            // Create iframe for YouTube
+            const iframe = document.createElement('iframe');
+            iframe.className = 'youtube-embed';
+            iframe.src = videoSrc;
+            iframe.title = item.title;
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+            iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+            iframe.setAttribute('allowfullscreen', '');
+            
+            // Add video class to container for styling
+            container.classList.add('video-display');
+            container.appendChild(iframe);
+          } else {
+            // Create image element
+            const img = document.createElement('img');
+            img.className = 'gallery-image';
+            img.src = item.src;
+            img.alt = item.alt;
+            
+            container.appendChild(img);
+          }
+          
+          // Update title and description
+          galleryTitle.textContent = item.title;
+          galleryDescription.textContent = item.description;
+          
+          // Update navigation visibility
+          prevBtn.style.visibility = currentIndex > 0 ? 'visible' : 'hidden';
+          nextBtn.style.visibility = currentIndex < currentImages.length - 1 ? 'visible' : 'hidden';
+          
+          // Ensure navigation buttons are visible and clickable
+          prevBtn.style.display = 'flex';
+          nextBtn.style.display = 'flex';
+        }
+        
+        // No longer needed since we removed the close button
+        // if (closeBtn) {
+        //   closeBtn.addEventListener('click', function(event) {
+        //     event.preventDefault();
+        //     event.stopPropagation();
+        //     gallery.classList.remove('active');
+        //     document.body.style.overflow = '';
+        //     // Clear container to stop video playback
+        //     document.querySelector('.gallery-image-container').innerHTML = '';
+        //   });
+        // }
+        
+        // Navigation buttons
+        if (prevBtn) {
+          prevBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            if (currentIndex > 0) {
+              currentIndex--;
+              updateGalleryContent();
+            }
+          });
+        }
+        
+        if (nextBtn) {
+          nextBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            if (currentIndex < currentImages.length - 1) {
+              currentIndex++;
+              updateGalleryContent();
+            }
+          });
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+          if (!gallery.classList.contains('active')) return;
+          
+          if (e.key === 'Escape') {
+            gallery.classList.remove('active');
+            document.body.style.overflow = '';
+            // Clear container to stop video playback
+            document.querySelector('.gallery-image-container').innerHTML = '';
+          } else if (e.key === 'ArrowLeft' && currentIndex > 0) {
+            currentIndex--;
+            updateGalleryContent();
+          } else if (e.key === 'ArrowRight' && currentIndex < currentImages.length - 1) {
+            currentIndex++;
+            updateGalleryContent();
+          }
+        });
+        
+        // Prevent gallery click from closing
+        gallery.addEventListener('click', function(e) {
+          if (e.target === gallery) {
+            gallery.classList.remove('active');
+            document.body.style.overflow = '';
+            // Clear container to stop video playback
+            document.querySelector('.gallery-image-container').innerHTML = '';
+          }
+        });
+      }
+      
+      // Initialize gallery
+      initGallery();
+    });
+  </script>
 
   {%- include footer.html -%}
 

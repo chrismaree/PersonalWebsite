@@ -1,0 +1,143 @@
+<!-- Fullscreen Image Gallery -->
+<div class="gallery-overlay" id="imageGallery">
+  <div class="gallery-container">
+    <button class="gallery-close" id="galleryClose">&times;</button>
+    <div class="gallery-nav-buttons">
+      <button class="gallery-prev" id="galleryPrev">&lt;</button>
+      <button class="gallery-next" id="galleryNext">&gt;</button>
+    </div>
+    <div class="gallery-content">
+      <img src="" alt="" id="galleryImage" class="gallery-image">
+      <div class="gallery-info">
+        <h3 id="galleryTitle"></h3>
+        <p id="galleryDescription"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Gallery elements
+    const gallery = document.getElementById('imageGallery');
+    const galleryImage = document.getElementById('galleryImage');
+    const galleryTitle = document.getElementById('galleryTitle');
+    const galleryDescription = document.getElementById('galleryDescription');
+    const closeButton = document.getElementById('galleryClose');
+    const prevButton = document.getElementById('galleryPrev');
+    const nextButton = document.getElementById('galleryNext');
+    
+    // Gallery state
+    let galleryImages = [];
+    let currentIndex = 0;
+    
+    // Open gallery when clicking on an image
+    document.querySelectorAll('.creation-image-container').forEach(container => {
+      container.addEventListener('click', function() {
+        const section = this.closest('.creation-section');
+        
+        // Get all images in the current section
+        galleryImages = [];
+        section.querySelectorAll('.creation-item').forEach(item => {
+          const img = item.querySelector('.creation-image');
+          if (img) {
+            galleryImages.push({
+              src: img.src,
+              alt: img.alt,
+              title: item.querySelector('h3')?.textContent || '',
+              description: item.querySelector('p')?.textContent || ''
+            });
+          }
+        });
+        
+        // Find the index of the clicked image
+        const clickedImg = this.querySelector('.creation-image');
+        currentIndex = galleryImages.findIndex(img => img.src === clickedImg.src);
+        if (currentIndex === -1) currentIndex = 0;
+        
+        // Show the gallery
+        updateGalleryImage();
+        gallery.classList.add('visible');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    
+    // Close gallery
+    closeButton.addEventListener('click', closeGallery);
+    gallery.addEventListener('click', function(e) {
+      if (e.target === gallery) {
+        closeGallery();
+      }
+    });
+    
+    // Navigation
+    prevButton.addEventListener('click', showPreviousImage);
+    nextButton.addEventListener('click', showNextImage);
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+      if (!gallery.classList.contains('visible')) return;
+      
+      if (e.key === 'Escape') {
+        closeGallery();
+      } else if (e.key === 'ArrowLeft') {
+        showPreviousImage();
+      } else if (e.key === 'ArrowRight') {
+        showNextImage();
+      }
+    });
+    
+    // Gallery functions
+    function updateGalleryImage() {
+      if (galleryImages.length === 0 || currentIndex < 0 || currentIndex >= galleryImages.length) return;
+      
+      const img = galleryImages[currentIndex];
+      
+      // Add animation classes
+      galleryImage.classList.add('loading');
+      
+      // Update the image after a short delay for animation
+      setTimeout(() => {
+        galleryImage.src = img.src;
+        galleryImage.alt = img.alt;
+        galleryTitle.textContent = img.title;
+        galleryDescription.textContent = img.description;
+        
+        // Update navigation visibility
+        prevButton.style.visibility = currentIndex > 0 ? 'visible' : 'hidden';
+        nextButton.style.visibility = currentIndex < galleryImages.length - 1 ? 'visible' : 'hidden';
+        
+        // Remove animation class
+        setTimeout(() => {
+          galleryImage.classList.remove('loading');
+        }, 300);
+      }, 200);
+    }
+    
+    function showPreviousImage() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateGalleryImage();
+      }
+    }
+    
+    function showNextImage() {
+      if (currentIndex < galleryImages.length - 1) {
+        currentIndex++;
+        updateGalleryImage();
+      }
+    }
+    
+    function closeGallery() {
+      gallery.classList.remove('visible');
+      document.body.style.overflow = '';
+      
+      // Reset state
+      setTimeout(() => {
+        galleryImage.src = '';
+        galleryTitle.textContent = '';
+        galleryDescription.textContent = '';
+      }, 300);
+    }
+  });
+</script>

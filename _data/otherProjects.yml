@@ -1,71 +1,92 @@
 # Education Template
+- name: Mr Poopybutthole AI Unassistor
+  date: 2025
+  github: chrismaree/MrPoopyButthole
+  description: |
+    Developed at an AI hackathon in Berlin, this project is an innovative voice assistant that deliberately gives unhelpful, sarcastic responses. It's a satirical take on AI assistants that explores the boundaries of human-AI interaction through humor and subversion.
+  tags: [AI, NLP, Voice Assistant, Berlin AI Hackathon 2025]
+  
+- name: MegaBlobs
+  date: 2024
+  description: |
+    Created at ETHGlobal ETHBrussels 2024, MegaBlobs is a decentralized storage solution that combines IPFS with onchain storage management. This project reimagines how data can be stored and accessed in web3 applications, focusing on durability, performance, and cost-effectiveness.
+  tags: [Blockchain, Dapp, ETHGlobal ETHBrussels 2024, Storage]
+  
+- name: TriggerWard
+  date: 2024
+  link: www.triggerward.com
+  github: trigger-finance/trigger-ward
+  description: |
+    Built at ETH Berlin 2024, TriggerWard is a privacy-focused financial toolkit that enables users to create and execute secure, private transactions using zero-knowledge proofs. The project addresses key challenges in blockchain privacy and programmable finance.
+  tags: [Blockchain, Dapp, ETH Berlin 2024, Privacy, ZK-proofs]
+  
 - name: Mindful-cash
   date: 2020
   link: mindful.cash
   github: mindful.cash-contracts
   description: |
-    Portfolio Alignment for Degens. With Mindful, you can adopt strategies to mindfully DCA into assets, rebalance your portfolio, and take profits automatically. Let your mindful self plan for your degen self's future. Mindful was built as part of the EthOnline 2020 hackathon where we placed as a finalist and won the Balancer first prize award.
+    Automated DeFi portfolio management system for dollar-cost averaging, rebalancing, and profit-taking. Balancer first prize winner at EthOnline 2020 hackathon. Enables strategic asset management with configurable investment strategies.
   tags: [Blockchain, Dapp, EthOnline 2020 winner 🏆, DeFi]
 - name: UpsideDai
   date: 2020
   link: upsidedai.netlify.app
   github: Daichotomy/UpSideDai
   description: |
-    UpsideDai is a highly leveraged contract for difference (CFD) built on Dai, Uniswap and Maker. This mechanism enables traders and speculators to bet on and hedge against price fluctuations of Dai by buying leveraged long or short positions. The CFD construction enables high leverage (20x) while remaining capital efficient and not requiring high margin requirements (100% collateralization). Positions are priced against the market observable Dai/Usd price by using a combination of the Maker oracle and Uniswap.
+    EthDenver 2020 winner. Capital-efficient leveraged trading platform (up to 20x) for Dai price speculation using contracts for difference (CFDs). Utilizes Maker oracle and Uniswap for price discovery while maintaining low collateralization requirements.
   tags: [Blockchain, Dapp, EthDenver Hackathon 2020 winner 🏆, DeFi]
 - name: $DAI Daddy II (Uncensored)
   date: 2019
   link: devpost.com/software/dai-daddy-ii-uncensored
   github: DaddyDeFi/DaiDaddy
   description: |
-    DAI Daddy II builds on enabling the unwinding CDPs. Under this model, rather than requiring a counterparty to ensure a CDP is repaid, the new DAI Daddy smart contract withdraws collateral from the CDP, uses Kyber Network to convert this ETH to DAI, and then pays off the CDP and returns the remaining ETH collateral to the owner.
+    Kyber DeFi hackathon finalist. Automated CDP (Collateralized Debt Position) unwinding system that converts ETH collateral to DAI via Kyber Network, repays CDP debt, and returns remaining collateral to the owner without requiring counterparties.
   tags: [Blockchain, Dapp, Kyber DeFi Virtual Hackathon 2019 finalists 🥈, DeFi]
 - name: $DAI Daddy
   date: 2019
   link: daidaddy.xyz
   github: diffusioncon/Team-30
   description: |
-    Dai Daddy is an autonomous platform for buying and selling Maker CDPs. Sellers can list their CDP for sale and offer a "discount rate" - less than the 13% fee they would have to pay if forcibly liquidated - which incentivises buyers to provide capital upfront and buy out the seller's debt. In this way it acts like a debt market for makerCDPs.
+    Diffusion DeFi Hackathon 2019 winner. Marketplace for trading Maker CDPs below liquidation fees, creating a secondary debt market. Enables sellers to exit positions at discount rates while providing buyers with profitable arbitrage opportunities.
   tags: [Blockchain, Dapp, Diffusion DeFi  Hackathon 2019 winner 🏆, DeFi]
 - name: MoonSteps
   date: 2019
   link: gainsbot.netlify.app
   github: chrismaree/GainsDapp
   description: |
-    Dapp to sell crypto at predefined intervals on the way up during a bull run. Dapp calculates all sell prices based on user input and recommends the best strategy to exit your position. Funds are stored in smart contracts and automatically traded via Uniswap. Contracts were written in `Vyper`, front end in `VueJS` using `materialUI`. Offchain relayers watch the contracts and trustlessly execute trade orders within the contract to preform token swaps on `UniSwap`.
+    Automated crypto profit-taking platform that executes sales at predefined price points during market uptrends. Built with Vyper smart contracts and VueJS frontend. Uses off-chain relayers to trigger Uniswap swaps when target prices are reached, implementing preset exit strategies.
   tags: [Blockchain, Dapp, Vyper, DeFi]
 - name: UniCoin
   date: 2019
   link: unicoin-dapp.netlify.app
   github: unicoinlicences/unicoindapp
   description: |
-    Dapp created as past of masters degree enabling academics to monetize their research for commercial applications while supporting open science. Researches can register on the platform, upload their works and create open auctions for material. Companies can buy licenses to use the research which mints non-fungible tokens(`ERC721`) which represent ownership of a licence. Integration done with `IPFS` for file storage and `Orcid` for academic profile verification.
+    Masters thesis project creating an academic research marketplace. Enables researchers to monetize their work while preserving open science principles through NFT-based licensing (ERC721). Integrated with IPFS for storage and Orcid for academic identity verification.
   tags: [Blockchain, Dapp, Fintech, IPFS]
 - name: Crypto Back Tester
   date: 2019
   github: chrismaree/CryptoPortfolioTester
   description: |
-    Cryptocurrency backtest to compare different rebalancing and trading strategies. It covers working with crypto price API's to retrieve information, manipulate this information using `pandas` and `numpy` into something that can be used in time series computations to implement different trading strategies. Interactive time series plotting is covered using `plotly`.
+    Portfolio backtesting tool for crypto trading strategies built with pandas, numpy, and plotly. Analyzes historical performance of rebalancing approaches and various trading algorithms using cryptocurrency market data APIs.
   tags: [Blockchain, Fintech, Python, Jupyter Notebooks]
 - name: SnapFund
   date: 2019
   link: snapfund.netlify.app
   github: constantiam/snap
   description: |
-    Dapp which creates automatically rebalancing crypto funds in a decentralized and trustless manor. Snap fund leverages decentralized exchanges for automated portfolio rebalancing to maintain a predefined ratio of `ERC20` tokens.
+    EthCapetown Hackathon 2019 winner. Decentralized index fund platform with automatic portfolio rebalancing. Uses DEXs to maintain target allocations of ERC20 tokens in a trustless, non-custodial system.
   tags: [Blockchain, Dapp, Vyper, DeFi, EthCapetown Hackathon 2019 winner 🏆]
 - name: Blockchain Art Directory
   date: 2019
   link: blockchainart.directory
   github: chainythings/BAD
   description: |
-    Contributed to the development of the Blockchain Art Directory (`BAD`) that serves as a service featuring a comprehensive collection of current, future and former projects which are dedicated to blockchain art, crypto collectibles and Non Fungible Tokens. I was responsible for building the search and filtering component of the front end application as a freelancer.
+    Contributed to the first comprehensive directory of blockchain art, crypto collectibles, and NFT projects. Designed and implemented advanced search and filtering functionality for the frontend as a freelance developer.
   tags: [Blockchain, Web Development]
 - name: Energy Consumption Optimization Platform
   date: 2018
   github: chrismaree/Energy-Consumption-Optimization-Management-Platform
   description: |
-    Energy consumption visulization to monitor and optimize energy consumption for a dynamic collection of buildings, such as a university. This a component of my honors thesis at Wits along with meterBlock.
+    Energy monitoring dashboard created as part of honors thesis alongside MeterBlock. Visualizes and optimizes consumption patterns across multiple buildings in institutional settings.
   tags: [Fullstack Web development, Devops, Python, Jupyter Notebooks]
   report: https://github.com/chrismaree/Energy-Consumption-Optimization-Management-Platform/blob/master/Docs/Report.pdf
 - name: EthStarter

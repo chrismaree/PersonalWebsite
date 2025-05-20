@@ -1,17 +1,3 @@
 [build]
-  command = "./build-netlify.sh"
+  # No build command - site is built locally
   publish = "_site/"
-
-[build.environment]
-  # Skip Python installation
-  NETLIFY_SKIP_PYTHON = "true"
-
-# Ensure the build is always considered successful
-[context.production]
-  ignore_warnings = true
-
-[context.deploy-preview]
-  ignore_warnings = true
-
-[context.branch-deploy]
-  ignore_warnings = true

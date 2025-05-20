@@ -1,7 +1,7 @@
 *.gem
 .bundle
 .sass-cache
-# _site is now tracked to ensure Netlify can deploy it
+# Removed _site from gitignore to ensure it's tracked for Netlify deployment
 Gemfile.lock
 *.code-workspace
 vendor

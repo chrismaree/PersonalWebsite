@@ -43,12 +43,12 @@ otherProjects_title: Open source projects, Hackathons & papers
 footer_show_references: false
 
 # Build settings
-# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
 remote_theme: sproogen/modern-resume-theme
 
 # GitHub Pages settings
-baseurl: ""
+baseurl: "/PersonalWebsite"  # For user pages with repository name
 url: "https://chrismaree.github.io"
+domain: "chrismaree.dev"     # If using a custom domain
 
 sass:
   sass_dir: _sass

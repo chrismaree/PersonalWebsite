@@ -1,3 +1,0 @@
-[build]
-  # No build command - site is built locally
-  publish = "_site/"

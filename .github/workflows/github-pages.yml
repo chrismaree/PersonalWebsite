@@ -18,7 +18,18 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
       
+      - name: Determine if using custom domain
+        id: domain-check
+        run: |
+          if grep -q "chrismaree.dev" CNAME; then
+            echo "::set-output name=config_file::_config.custom.yml"
+          else
+            echo "::set-output name=config_file::_config.github.yml"
+          fi
+      
       - uses: helaili/jekyll-action@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           target_branch: gh-pages
+          jekyll_src: .
+          jekyll_cfg: _config.yml,${{ steps.domain-check.outputs.config_file }}

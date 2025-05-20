@@ -46,9 +46,9 @@ footer_show_references: false
 remote_theme: sproogen/modern-resume-theme
 
 # GitHub Pages settings
-baseurl: "/PersonalWebsite"  # For user pages with repository name
-url: "https://chrismaree.github.io"
-domain: "chrismaree.dev"     # If using a custom domain
+# Default settings for local development - override with _config.custom.yml or _config.github.yml
+baseurl: ""
+url: "http://localhost:4000"
 
 sass:
   sass_dir: _sass

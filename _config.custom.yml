@@ -1,0 +1,3 @@
+# Override settings for GitHub custom domain
+baseurl: ""  # Empty for custom domain
+url: "https://chrismaree.dev"

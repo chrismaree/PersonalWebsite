@@ -1,0 +1,3 @@
+# Override settings for GitHub Pages with repo name
+baseurl: "/PersonalWebsite"
+url: "https://chrismaree.github.io"

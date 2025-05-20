@@ -10,8 +10,14 @@ To run the site locally:
 # Install dependencies
 bundle install
 
-# Start development server
+# For local development (default configuration)
 bundle exec jekyll serve
+
+# To test with GitHub Pages URL structure
+bundle exec jekyll serve --config _config.yml,_config.github.yml
+
+# To test with custom domain configuration
+bundle exec jekyll serve --config _config.yml,_config.custom.yml
 ```
 
 The site will be available at http://localhost:4000

@@ -2,6 +2,10 @@
   command = "./build-netlify.sh"
   publish = "_site/"
 
+[build.environment]
+  # Skip Python installation
+  NETLIFY_SKIP_PYTHON = "true"
+
 # Ensure the build is always considered successful
 [context.production]
   ignore_warnings = true

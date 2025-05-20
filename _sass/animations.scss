@@ -1,0 +1,338 @@
+/* Terminal cursor animation */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Matrix-inspired text rain animation */
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+                -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+                0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+                -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+                0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+                0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+                -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+                0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+                -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+                0.05em 0 0 rgba(0, 255, 0, 0.75),
+                0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+                0.05em 0 0 rgba(0, 255, 0, 0.75),
+                0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+                -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+                -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* Matrix-like text reveal */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Button hover effects */
+.button--sacnite {
+  position: relative;
+  overflow: hidden;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 255, 170, 0.8);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s cubic-bezier(0.5, 0, 0.5, 1);
+  }
+  
+  &:hover::after {
+    transform: scaleX(1);
+  }
+  
+  &.active {
+    &::before {
+      box-shadow: inset 0 0 0 35px #0a0 !important;
+    }
+    
+    &:hover {
+      color: #0a0;
+      
+      &::before {
+        box-shadow: inset 0 0 0 2px #0a0 !important;
+      }
+    }
+  }
+}
+
+/* Hacker-style animations */
+.navigation-buttons {
+  .button--sacnite {
+    transition: transform 0.2s, color 0.3s, text-shadow 0.3s;
+    
+    &:hover {
+      transform: translateY(-3px);
+      animation: glitch 1.5s infinite alternate-reverse;
+    }
+    
+    &.active {
+      &::before {
+        animation: scanline 5s linear infinite;
+        background: linear-gradient(to bottom, transparent, rgba(0, 255, 0, 0.2), transparent);
+      }
+    }
+  }
+}
+
+/* Add terminal cursor to headings */
+h1, h2 {
+  position: relative;
+  
+  &::after {
+    content: '|';
+    position: absolute;
+    right: -0.5em;
+    animation: blink 1s step-end infinite;
+    color: #0f0;
+    font-weight: 300;
+  }
+}
+
+/* Add green highlight to links */
+a {
+  &:hover {
+    color: #0f0;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.7);
+  }
+}
+
+/* Global styles to create hacker theme */
+body {
+  background-color: #0a0a0a;
+  color: #0f0;
+  text-shadow: 0 0 2px rgba(0, 255, 0, 0.5);
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  z-index: 1000;
+}
+
+/* Scanline effect */
+.scanline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 255, 0, 0.1),
+    transparent
+  );
+  opacity: 0.6;
+  z-index: 1001;
+  pointer-events: none;
+  animation: scanline 8s linear infinite;
+}
+
+/* Glitch text effect */
+.glitch-text {
+  position: relative;
+  text-shadow: 
+    0.05em 0 0 rgba(255, 0, 0, 0.2),
+    -0.05em -0.025em 0 rgba(0, 255, 0, 0.4),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.1);
+  animation: glitch 2.5s infinite alternate-reverse;
+}
+
+/* Matrix-style text scramble effect */
+.button--sacnite::before {
+  transition: all 0.3s;
+}
+
+/* Add some cyberpunk accent colors */
+::selection {
+  background: rgba(0, 255, 0, 0.3);
+  text-shadow: none;
+}
+
+/* Make heading styles more hacker-like */
+h1, h2, h3 {
+  letter-spacing: 2px;
+  color: #0f0;
+  text-transform: uppercase;
+}
+
+/* Profile image glitch effect */
+.profile-img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.profile-img {
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-img-container:hover .profile-img {
+  filter: contrast(1.2) brightness(0.9) hue-rotate(5deg);
+}
+
+.profile-glitch-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 130px;
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+  opacity: 0;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+.profile-img-container:hover .profile-glitch-effect {
+  opacity: 1;
+  animation: glitch-animation 0.6s cubic-bezier(.25, .46, .45, .94) both infinite;
+}
+
+@keyframes glitch-animation {
+  0% {
+    transform: translate(0);
+    background-color: rgba(255, 0, 0, 0.3);
+    clip-path: polygon(0 25%, 100% 25%, 100% 30%, 0 30%);
+  }
+  10% {
+    clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+    transform: translate(-4px, 0);
+    background-color: rgba(0, 255, 0, 0.3);
+  }
+  20% {
+    clip-path: polygon(0 75%, 100% 75%, 100% 80%, 0 80%);
+    transform: translate(4px, 0);
+    background-color: rgba(0, 0, 255, 0.3);
+  }
+  30% {
+    clip-path: polygon(0 40%, 100% 40%, 100% 45%, 0 45%);
+    transform: translate(-4px, 0);
+    background-color: rgba(255, 0, 255, 0.3);
+  }
+  40% {
+    clip-path: polygon(0 65%, 100% 65%, 100% 70%, 0 70%);
+    transform: translate(4px, 0);
+    background-color: rgba(0, 255, 255, 0.3);
+  }
+  50% {
+    clip-path: polygon(0 15%, 100% 15%, 100% 20%, 0 20%);
+    transform: translate(-4px, 0);
+    background-color: rgba(255, 255, 0, 0.3);
+  }
+  60% {
+    clip-path: polygon(0 90%, 100% 90%, 100% 95%, 0 95%);
+    transform: translate(4px, 0);
+    background-color: rgba(255, 0, 0, 0.3);
+  }
+  70% {
+    clip-path: polygon(0 5%, 100% 5%, 100% 10%, 0 10%);
+    transform: translate(-4px, 0);
+    background-color: rgba(0, 255, 0, 0.3);
+  }
+  80% {
+    clip-path: polygon(0 85%, 100% 85%, 100% 90%, 0 90%);
+    transform: translate(4px, 0);
+    background-color: rgba(0, 0, 255, 0.3);
+  }
+  90% {
+    clip-path: polygon(0 35%, 100% 35%, 100% 40%, 0 40%);
+    transform: translate(-4px, 0);
+    background-color: rgba(255, 0, 255, 0.3);
+  }
+  100% {
+    clip-path: polygon(0 60%, 100% 60%, 100% 65%, 0 65%);
+    transform: translate(0);
+    background-color: rgba(0, 255, 255, 0.3);
+  }
+}
+
+/* Specific styling for content areas */
+.wrapper {
+  position: relative;
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  pointer-events: none;
+}
+
+/* Style footer to match theme */
+.footer-container {
+  border-top: 1px solid rgba(0, 255, 0, 0.3);
+  padding-top: 20px;
+}
+
+.footer-container p, 
+.footer-container a {
+  color: rgba(0, 255, 0, 0.7);
+}

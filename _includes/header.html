@@ -3,6 +3,11 @@
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 header-left">
       <h1>{{ site.name | escape }}</h1>
       <h2>{{ site.title | escape }}</h2>
+      <!-- Navigation Buttons -->
+      <div class="navigation-buttons">
+        <a href="/" class="button button--sacnite {% if page.url == '/' %}active{% endif %}" data-text="Build">[ Build ]</a>
+        <a href="/creations" class="button button--sacnite {% if page.url contains 'creations' %}active{% endif %}" data-text="Create">[ Create ]</a>
+      </div>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 header-right">
       <ul class="icons no-print">
@@ -64,8 +69,8 @@
         {%- endif -%}
         {%- if site.twitter_username -%}
           <li>
-            <a target="_blank" href="https://twitter.com/{{ site.twitter_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-              <i class="fa fa-twitter" title="Twitter link"></i>
+            <a target="_blank" href="https://x.com/{{ site.twitter_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
+              <i class="fa fa-twitter" title="X link"></i>
             </a>
           </li>
         {%- endif -%}

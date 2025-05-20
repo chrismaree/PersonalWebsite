@@ -1,0 +1,156 @@
+# Projects Template
+- name: Mr Poopybutthole AI Unassistor
+  date: 2025
+  github: chrismaree/MrPoopyButthole
+  description: |
+    Developed at an AI hackathon in Berlin, this project is an innovative voice assistant that deliberately gives unhelpful, sarcastic responses. It's a satirical take on AI assistants that explores the boundaries of human-AI interaction through humor and subversion.
+  tags: [AI, NLP, Voice Assistant, Berlin AI Hackathon 2025]
+  
+- name: MegaBlobs
+  date: 2024
+  description: |
+    Created at ETHGlobal ETHBrussels 2024, MegaBlobs is a decentralized storage solution that combines IPFS with onchain storage management. This project reimagines how data can be stored and accessed in web3 applications, focusing on durability, performance, and cost-effectiveness.
+  tags: [Blockchain, Dapp, ETHGlobal ETHBrussels 2024, Storage]
+  
+- name: TriggerWard
+  date: 2024
+  link: triggerward.com
+  github: trigger-finance/trigger-ward
+  description: |
+    Built at ETH Berlin 2024, TriggerWard is a privacy-focused financial toolkit that enables users to create and execute secure, private transactions using zero-knowledge proofs. The project addresses key challenges in blockchain privacy and programmable finance.
+  tags: [Blockchain, Dapp, ETH Berlin 2024, Privacy, ZK-proofs]
+  
+- name: Mindful-cash
+  date: 2020
+  link: mindful.cash
+  github: mindful.cash-contracts
+  description: |
+    Automated DeFi portfolio management system for dollar-cost averaging, rebalancing, and profit-taking. Balancer first prize winner at EthOnline 2020 hackathon. Enables strategic asset management with configurable investment strategies.
+  tags: [Blockchain, Dapp, EthOnline 2020 winner 🏆, DeFi]
+- name: HoneyLemon
+  date: 2020 - 2021
+  link: honeylemon.market
+  github: dapp.honeylemon.market
+  twitter: HoneylemonM
+  description: |
+    Synthetic Bitcoin cloud mining contracts on Ethereum. Enables BTC miners to hedge against volatility by selling future hash rate payoff, while giving investors exposure to mining without equipment costs. Core contributor responsible for smart contract implementation, financial engineering, and system architecture design.
+  tags: [Blockchain, DeFi, Derivatives, Ethereum]
+- name: UpsideDai
+  date: 2020
+  link: upsidedai.netlify.app
+  github: Daichotomy/UpSideDai
+  description: |
+    EthDenver 2020 winner. Capital-efficient leveraged trading platform (up to 20x) for Dai price speculation using contracts for difference (CFDs). Utilizes Maker oracle and Uniswap for price discovery while maintaining low collateralization requirements.
+  tags: [Blockchain, Dapp, EthDenver Hackathon 2020 winner 🏆, DeFi]
+- name: $DAI Daddy II (Uncensored)
+  date: 2019
+  link: devpost.com/software/dai-daddy-ii-uncensored
+  github: DaddyDeFi/DaiDaddy
+  description: |
+    Kyber DeFi hackathon finalist. Automated CDP (Collateralized Debt Position) unwinding system that converts ETH collateral to DAI via Kyber Network, repays CDP debt, and returns remaining collateral to the owner without requiring counterparties.
+  tags: [Blockchain, Dapp, Kyber DeFi Virtual Hackathon 2019 finalists 🥈, DeFi]
+- name: $DAI Daddy
+  date: 2019
+  link: daidaddy.xyz
+  github: diffusioncon/Team-30
+  description: |
+    Diffusion DeFi Hackathon 2019 winner. Marketplace for trading Maker CDPs below liquidation fees, creating a secondary debt market. Enables sellers to exit positions at discount rates while providing buyers with profitable arbitrage opportunities.
+  tags: [Blockchain, Dapp, Diffusion DeFi  Hackathon 2019 winner 🏆, DeFi]
+- name: Cherry Swap
+  date: 2019 - 2021
+  link: cherryswap.xyz
+  github: NeapolitanSwaps/CherrySwap
+  twitter: cherry_swap
+  description: |
+    Next-generation DeFi platform offering pooled interest rate swaps for borrowers and lenders. Co-founder and lead developer, designed financial models for fixed-rate lending and borrowing. Winner of EthBerlin open track prize and recipient of Binance X Fellowship.
+  tags: [Blockchain, DeFi, Interest Rate Swaps, EthBerlin Winner]
+- name: MoonSteps
+  date: 2019
+  link: gainsbot.netlify.app
+  github: chrismaree/GainsDapp
+  description: |
+    Automated crypto profit-taking platform that executes sales at predefined price points during market uptrends. Built with Vyper smart contracts and VueJS frontend. Uses off-chain relayers to trigger Uniswap swaps when target prices are reached, implementing preset exit strategies.
+  tags: [Blockchain, Dapp, Vyper, DeFi]
+- name: UniCoin
+  date: 2019
+  link: unicoin-dapp.netlify.app
+  github: unicoinlicences/unicoindapp
+  description: |
+    Masters thesis project creating an academic research marketplace. Enables researchers to monetize their work while preserving open science principles through NFT-based licensing (ERC721). Integrated with IPFS for storage and Orcid for academic identity verification.
+  tags: [Blockchain, Dapp, Fintech, IPFS]
+- name: Crypto Back Tester
+  date: 2019
+  github: chrismaree/CryptoPortfolioTester
+  description: |
+    Portfolio backtesting tool for crypto trading strategies built with pandas, numpy, and plotly. Analyzes historical performance of rebalancing approaches and various trading algorithms using cryptocurrency market data APIs.
+  tags: [Blockchain, Fintech, Python, Jupyter Notebooks]
+- name: SnapFund
+  date: 2019
+  link: snapfund.netlify.app
+  github: constantiam/snap
+  description: |
+    EthCapetown Hackathon 2019 winner. Decentralized index fund platform with automatic portfolio rebalancing. Uses DEXs to maintain target allocations of ERC20 tokens in a trustless, non-custodial system.
+  tags: [Blockchain, Dapp, Vyper, DeFi, EthCapetown Hackathon 2019 winner 🏆]
+- name: Blockchain Art Directory
+  date: 2019
+  link: blockchainart.directory
+  github: chainythings/BAD
+  description: |
+    Contributed to the first comprehensive directory of blockchain art, crypto collectibles, and NFT projects. Designed and implemented advanced search and filtering functionality for the frontend as a freelance developer.
+  tags: [Blockchain, Web Development]
+- name: RadiCards
+  date: 2018 - 2019
+  link: radi.cards
+  github: RadiCards/radi.cards
+  twitter: Radi_Cards
+  medium: radicards
+  podcast: https://anchor.fm/wizardofdapps/episodes/Episode-0-Radi-Cards-with-Lili-Feyerabend--Chris-Maree-e3glv0/a-ac0hp6
+  telegram: https://t.me/RadiCards
+  description: |
+    NFT-based charity platform enabling users to send digital greeting cards with attached cryptocurrency. Co-founder and lead developer responsible for smart contract development and frontend implementation. Built trustless claimable links and DAI integration.
+  tags: [Blockchain, NFT, Charity, Ethereum]
+- name: Energy Consumption Optimization Platform
+  date: 2018
+  github: chrismaree/Energy-Consumption-Optimization-Management-Platform
+  description: |
+    Energy monitoring dashboard created as part of honors thesis alongside MeterBlock. Visualizes and optimizes consumption patterns across multiple buildings in institutional settings.
+  tags: [Fullstack Web development, Devops, Python, Jupyter Notebooks]
+  report: https://github.com/chrismaree/Energy-Consumption-Optimization-Management-Platform/blob/master/Docs/Report.pdf
+- name: EthStarter
+  date: 2018
+  github: chrismaree/ethstarter
+  description: |
+    Decentralized, peer to peer funding platform for creatives, charities and open source projects. Ethstarter enables individuals to create new campaigns and publish them on an open platform. Key campaign logic is stored within Ethereum Smart contracts and additional information (such as images, text and embedded content) is stored on `IPFS`.
+  tags: { Dapp, Solidity, Consensys Academy }
+- name: Smart Contract Development Best Practice Paper
+  date: 2018
+  github: chrismaree/smart-contract-development-best-practice
+  description: |
+    I wrote a paper on the current research into Ethereum smart contract development best practice relating to contract security. Previously hacked contracts are identified and discussed, breaking down exactly how the hack occured. A selection of the latest symbolic execution-based and static analysis tools are then used to analyze these contracts to try and identify the exploited vulnerabilities.
+  tags: { Blockchain, Solidity, Security, Wits }
+  report: https://github.com/chrismaree/smart-contract-development-best-practice/blob/master/Smart%20Contract%20Development%20Best%20Practice.pdf
+- name: MeterBlock
+  date: 2018
+  github: chrismaree/meterblock
+  report: https://github.com/chrismaree/meterblock/blob/master/Documents/Final%20Report.pdf
+  description: |
+    Honors dissertation project creating blockchain-connected smart meters for energy governance. Winner of SAIEE National Student Paper Competition and recognized as most innovative final-year engineering project at Wits University (2018).
+  tags: [Blockchain, IoT, Energy, Academic]
+- name: blockPoll
+  date: 2018
+  github: when-moon/blockPoll
+  description: |
+    Unlock the Block Hackathon 2018 Winner. Pseudo-anonymous, blockchain-based voting tool facilitating organizational proxy voting and polling mechanisms for governance applications.
+  tags: [Blockchain, Dapp, Solidity, Unlock the Block Hackathon 2018 Winner 🏆]
+- name: LunaBound
+  date: 2018
+  github: BLOCKCHAINGERS/LUNABOUND
+  tags: [Blockchain, Dapp, Solidity, Blockchaingers Hackathon 2018 second place 🥈]
+  description: |
+    Co-owned multisignature staking pool for Ethereum’s proof of stake. Was conceptual before ETH2.0 specks were full defined or fleshed out and explored the possibility of staking pools.
+- name: Pango
+  date: 2017
+  github: PangoProject/PangoSign
+  tags: [Blockchain, Dapp, Solidity]
+  description: |
+    Started an open-source project providing cryptographically verifiable certificates of authenticity, stored on Ethereum (eg university degrees, on the Blockchain). Was my first intro into Ethereum blockchain, more serious front end development and smart contracts.

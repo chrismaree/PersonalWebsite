@@ -1,0 +1,14 @@
+/* Custom Video Play Icon */
+.video-indicator:before {
+  content: '\25B6';  /* Unicode play triangle */
+  display: inline-block;
+  font-size: 3rem;
+  color: #0f0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+}
+
+.creation-image-container:hover .video-indicator:before {
+  font-size: 3.5rem;
+  text-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}

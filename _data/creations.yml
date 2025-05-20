@@ -1,0 +1,160 @@
+- type: string_thingi
+  title: String-thingi
+  description: A luminous tapestry of light and tension created for AfrikaBurn 2025. This installation uses 1.2km of UV reactive rope interwoven through a precision-crafted CNC wooden framework. During the day, it stands as a geometric marvel of tension and form—at night, it undergoes a complete metamorphosis as 200W of 365nm UV lights bring the invisible into brilliant existence. The intricacy of the <a href="https://a360.co/3XR0In6" target="_blank">CAD design</a> translates into an experiential space where mathematics becomes tactile, where rational design evokes irrational wonder. It's an exercise in precision becoming transcendence, in careful planning surrendering to spontaneous awe.
+  date: 2025
+  event: AfrikaBurn 2025
+  images:
+    - path: /images/create/string_thingi/2025-05-19 13.49.45.jpg
+      title: Nocturnal Illumination
+      description: The installation comes alive at night as UV lights reveal the fluorescent patterns, creating an otherworldly glow that transforms the entire structure.
+    - path: /images/create/string_thingi/IMG_3577 Copy.JPG
+      title: Sacred Geometry I
+      description: A complex geometric pattern emerges from simple string lines, creating a mandala-like form that invites contemplation.
+    - path: /images/create/string_thingi/IMG_3581 Copy.JPG
+      title: Dimensional Study
+      description: Layered string work that creates the illusion of depth and movement when viewed from different angles.
+    - path: /images/create/string_thingi/IMG_3583.jpg
+      title: Tensile Structure
+      description: Exploring the balance between tension and harmony through intersecting string patterns.
+    - path: /images/create/string_thingi/IMG_3626 Copy.JPG
+      title: Convergence
+      description: Lines converge and diverge in this string installation, creating focal points that shift as you move around the piece.
+    - path: /images/create/string_thingi/IMG_4760.jpeg
+      title: Woven Light
+      description: String catches and plays with light, creating a delicate interplay between material and illumination.
+
+- type: shadow_work
+  title: Shadow Work
+  description: Created for AfrikaBurn 2024's theme "Creation," this meditation on duality became my own form of shadow work—literal and metaphorical. Using CNC-cut wooden panels arranged in calculated patterns, the installation serves as both object and absence, presence and void. During daylight, the structure reveals one identity—solid, grounded, deliberate—while at night, it transforms completely, its shadows becoming the primary medium. This duality speaks to our own inner landscapes, how we present ourselves in different lights, how much remains unseen until conditions change. The careful interplay of positive and negative space reminds me how incomplete our self-perception often is, how much resides in our shadows, waiting to be illuminated when we change our perspective.
+  date: 2024
+  event: AfrikaBurn 2024
+  images:
+    - path: /images/create/shadow_work/shadowwork1.JPG
+      title: Inner Reflections
+      description: A visual meditation on the shadows we all carry within, revealing their transformative potential when exposed to different lighting conditions at AfrikaBurn.
+    - path: /images/create/shadow_work/shadowwork2.jpg
+      title: Luminous Presence
+      description: The installation casts an intricate pattern of light and shadow across the desert floor, with a solitary figure illuminated in red light contemplating the geometric forms.
+    - path: /images/create/shadow_work/shadowwork3.jpg
+      title: Nocturnal Geometry
+      description: Under the night sky, the structure's internal light source creates a kaleidoscopic shadow pattern that transforms the surrounding environment into a meditative space.
+    - path: /images/create/shadow_work/shadowwork4.jpg
+      title: Journey to the Burn
+      description: The dodecahedron structure in transit to AfrikaBurn, showcasing the daylight appearance of the intricate geometric cutouts before installation in the desert.
+
+- type: gelactic_entryway
+  title: Galactic Entryway
+  description: Standing 3 meters tall in the middle of the dusty Tankwa desert, the Galactic Entryway created for AfrikaBurn 2023 marked a threshold between ordinary reality and something far more infinite. By day, it reflected the harsh desert light, offering fleeting glimpses of yourself—a practical mirror for dusty Burners to check their appearance. But as darkness fell, its 900W of UV lights powered by WLED controllers transformed the structure into a portal of boundless depth. The infinity mirror effect created a tunnel-like illusion that seemed to stretch beyond the physical constraints of our dimension. The juxtaposition delighted me—the same object could be both utterly practical and profoundly transcendent, just as we all contain multitudes of utilitarian function and cosmic possibility. Finding it unexpectedly in the darkness became a moment of wonder for many, a reminder that boundaries are more permeable than we think.
+  date: 2023
+  event: AfrikaBurn 2023
+  images:
+    - path: https://youtu.be/WQD7Zn19LW4
+      title: Portal Experience
+      description: A short walkthrough of the Galactic Entryway installation, showing how the portal effect creates a transition between spaces.
+      type: youtube
+      thumbnail: /images/create/gelactic_entryway/videos/portal_thumbnail.jpg
+    - path: https://youtu.be/m56bMainKw4
+      title: Light Dance
+      description: Light interacting with the Galactic Entryway structure, creating mesmerizing patterns and visual rhythms.
+      type: youtube
+      thumbnail: /images/create/gelactic_entryway/videos/light_thumbnail.jpg
+    - path: https://youtu.be/mKP-IiQ7_Jg
+      title: Night Transformation
+      description: The Galactic Entryway comes alive at night, with illumination revealing new dimensions of the installation.
+      type: youtube
+      thumbnail: /images/create/gelactic_entryway/videos/night_thumbnail.jpg
+    - path: /images/create/gelactic_entryway/IMG_7929.jpg
+      title: Threshold
+      description: The entryway design creates an immersive experience that transforms the ordinary into the extraordinary, inviting participants to cross over into new possibilities.
+
+- type: entering_the_realm
+  title: Entering the Realm
+  description: Built for Kiez Burn, Germany in 2023, "Entering the Realm" is an immersive exploration into Moloch's domain, examining the choices we face as humans between right and wrong, good and evil. Constructed within a 6-meter geodesic dome, this interactive audio and light experience presents participants with moral dilemmas of modern existence. Take nuclear power, for example—simultaneously a potential destroyer of worlds and a key to green energy. Similar arguments can be made for genetic engineering and other technological advances. Visitors walk through a circular gallery inside the dome, confronting these dualisms, before arriving at a central meditation area where they can reflect on their vision for humanity's future. The installation invites us to consider that our most challenging moral questions rarely have simple answers—that wisdom lies in navigating complexity rather than seeking absolutism.
+  date: 2023
+  event: Kiez Burn 2023
+  images:
+    - path: https://youtu.be/uXQ72zzTR0g
+      title: Entering the Realm Experience
+      description: A walkthrough of the interactive dome installation that explores moral choices and ethical dilemmas through light and sound.
+      type: youtube
+      thumbnail: /images/create/entering_the_realm/realm_thumbnail.jpg
+    - path: https://youtu.be/a5TzbdOeiTw
+      title: Entering the Realm Visual Journey
+      description: Visual exploration of the immersive light and sound experience within the geodesic dome structure.
+      type: youtube
+      thumbnail: /images/create/entering_the_realm/realm_visual_thumbnail.jpg
+    - path: https://youtube.com/shorts/IpiiZ7RnxOM
+      title: Entering the Realm Installation
+      description: Short clip showcasing the dome installation during the Kiez Burn festival, highlighting the interactive elements and visitor engagement.
+      type: youtube
+      thumbnail: /images/create/entering_the_realm/realm_shorts_thumbnail.jpg
+    - path: /images/create/romanesco_realm/IMG_8568.jpg
+      title: Inside the Dome
+      description: Interior view of the geodesic dome structure, showing the immersive light installation that creates the experiential journey.
+
+- type: duckeract
+  title: Duckeract
+  description: The Duckeract, which debuted at AfrikaBurn 2022, emerged from that beautiful intersection of absurdity and intention. What began as a peculiar thought—"what if an infinity mirror was shaped like a duck and quacked when you approached it?"—evolved into a delightful contradiction of form. This anthropomorphized tesseract combined the innocuous charm of a rubber duck with the mind-bending properties of nested mirrors, creating an infinite regression of ducks-within-ducks that quacked loudly when its motion sensors detected nearby participants. It was serious craftsmanship in service of joyful silliness, technical execution for the sake of surprise and laughter. The project reminded me how play can be just as vital as purpose, how the most memorable experiences often come from ideas that initially sound ridiculous. In a world that often demands justification, sometimes "because it would be funny" is reason enough to create.
+  date: 2022
+  event: AfrikaBurn 2022
+  images:
+    - path: /images/create/duckeract/IMG_4687.JPG
+      title: Duckeract Genesis
+      description: The first in the series, exploring the transition from organic form to geometric abstraction.
+    - path: /images/create/duckeract/IMG_4700.JPG
+      title: Cubic Waterfowl
+      description: A study in contrasts between the playful essence of a duck and the rigid structure of cubic form.
+    - path: /images/create/duckeract/IMG_4704.JPG
+      title: Dimensional Duck
+      description: Exploring how light and shadow interact with the duck form when constrained by geometric principles.
+    - path: /images/create/duckeract/IMG_4706.JPG
+      title: Tesseract Quack
+      description: A fourth-dimensional exploration of the duck form, suggesting movement between planes of existence.
+    - path: /images/create/duckeract/IMG_4715.JPG
+      title: Quantum Duck
+      description: The final piece in the series, representing the duck in multiple states simultaneously.
+
+- type: drone
+  title: Drone Photography
+  description: Flying drones has become my meditation in motion—a way to embody that childhood dream of flight while developing an entirely new relationship with familiar landscapes. As I navigate South Africa's diverse terrain from above, I'm both physically grounded and perceptually soaring, experiencing a perspective shift that never fails to recalibrate my sense of scale and significance. The drone becomes an extension of curiosity, leading me to remote beaches at dawn, mountain peaks at sunset, and hidden valleys I might otherwise never explore. There's something fundamentally altering about witnessing the patterns that emerge from elevation—the rhythmic pulse of waves, the fractal geometry of riverbeds, the delicate tracery of paths through wilderness. These aerial journeys have become more than photography; they're excuses to encounter the world differently, to remember how many viewpoints exist beyond our everyday limitations, to experience the world as both vast and interconnected.
+  date: 2021
+  event: Ongoing
+  images:
+    - path: https://youtu.be/kkGAN6p3WvY
+      title: East London Speed
+      description: Aerial footage filmed in East London, South Africa, showcasing the coastal beauty and dynamic landscapes from above.
+      type: youtube
+      thumbnail: /images/create/drone/speed_thumbnail.jpg
+    - path: https://youtu.be/HvupyIxWVo4
+      title: Dullstroom River
+      description: Exploring the serene waters of Dullstroom River in South Africa with a DJI FPV Drone.
+      type: youtube
+      thumbnail: /images/create/drone/dronetherapy_thumbnail.jpg
+    - path: https://youtu.be/bEEa8-0H2Ks
+      title: Kenton on Sea
+      description: FPV drone flight capturing the stunning coastal views of Kenton on Sea.
+      type: youtube
+      thumbnail: /images/create/drone/atlantis_thumbnail.jpg
+    - path: https://youtu.be/DkTInF4OwBM
+      title: Freestyle FPV
+      description: 6s Titan DC5 freestyle FPV drone footage captured with GoPro Hero 8.
+      type: youtube
+      thumbnail: /images/create/drone/scarborough_thumbnail.jpg
+    - path: /images/create/drone/drone1.jpeg
+      title: Coastal Perspective
+      description: Aerial view of a stunning coastline revealing the dance between land and sea.
+    - path: /images/create/drone/drone2.jpg
+      title: Natural Geometry
+      description: From above, nature's intricate designs become visible, showcasing patterns that are invisible from the ground.
+    - path: /images/create/drone/drone3.jpg
+      title: Desert Mirage
+      description: The shifting sands create beautiful abstractions when viewed from high above, blurring the line between reality and imagination.
+    - path: /images/create/drone/drone4.jpg
+      title: Camps Bay Aerial
+      description: The iconic Camps Bay coastline seen from a perspective that reveals the perfect harmony between mountain and sea.
+    - path: /images/create/drone/drone5.jpg
+      title: Tranquil Waters
+      description: The gentle interplay of light and water creates a mesmerizing tapestry of colors and reflections.
+    - path: /images/create/drone/drone6.jpg
+      title: Emerald Shores
+      description: The vivid green algae along the rocky coastline creates a surreal, otherworldly landscape that seems almost digital in nature.

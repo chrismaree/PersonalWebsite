@@ -4,28 +4,28 @@ favicon: images/favicon.png
 
 # Personal info
 name: Chris Maree
-title: Electrical Engineer & full stack blockchain developer. Passionate about open source software, blockchain and decentralized finance.
+title: Full-stack tinkerer building in crypto, open source, and mechanism design. Driven to create.
 email: christopher.maree at gmail.com
 website: chrismaree.dev
 
 # Social links
-twitter_username: DeFiChris
+twitter_username: chrismaree_
 github_username:  chrismaree
 linkedin_username: christopher-maree-49463312b
-telegram_username: chris_maree
+telegram_username: IAmChrisMaree
 
 # About Section
 about_title: About me
 about_profile_image: images/profilePic.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi 👋! I'm Chris and I am a full stack developer with interests in blockchain technology and decentralized finance. I've been involved in a bunch of different opensource projects and startups, you can check them out below. 
-    
-  I see blockchain as a technology that empowers people for the first time to challenge the power structures that define our society at a protocol level.
+  Hi, I'm Chris — a crypto-native builder since 2016, working at the edge of technology, design, and decentralized systems. My work spans full-stack engineering, mechanism design, and experiments in cryptographic coordination.
 
-  Oh and I also like scuba diving, photography, live music and good food 🤘🚀.
+  Currently exploring the intersection of finance, computer science, and economics, pursuing innovative ideas that could transform how we build and value digital assets.
+
+  Beyond code, I create art installations, fly drones, explore ocean depths, and seek out live music and culinary adventures. Finding balance through creativity is essential to my process.
   
 # Projects Section
-projects_title: Open source projects
+# projects_title: Open source projects
 
 # Experience Section
 experience_title: Work experience & startups #(Use this to override about experience section title)
@@ -37,7 +37,7 @@ experience_title: Work experience & startups #(Use this to override about experi
 # more_title: Other smaller projects & hackathons
 # more_content: |
   
-otherProjects_title: Other Notable projects, hackathons & papers
+otherProjects_title: Open source projects, Hackathons & papers
 
 # Footer
 footer_show_references: false

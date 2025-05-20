@@ -8,16 +8,16 @@ To run the site locally:
 
 ```bash
 # Install dependencies
-bundle install
+BUNDLE_GEMFILE=Gemfile.simple bundle install
 
 # For local development (default configuration)
-bundle exec jekyll serve
+BUNDLE_GEMFILE=Gemfile.simple bundle exec jekyll serve --config _config.yml,_config.local.yml
 
 # To test with GitHub Pages URL structure
-bundle exec jekyll serve --config _config.yml,_config.github.yml
+BUNDLE_GEMFILE=Gemfile.simple bundle exec jekyll build --config _config.yml,_config.github.yml
 
 # To test with custom domain configuration
-bundle exec jekyll serve --config _config.yml,_config.custom.yml
+BUNDLE_GEMFILE=Gemfile.simple bundle exec jekyll build --config _config.yml,_config.custom.yml
 ```
 
 The site will be available at http://localhost:4000

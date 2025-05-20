@@ -1,3 +1,11 @@
-# Override settings for GitHub custom domain
-baseurl: ""  # Empty for custom domain
-url: "https://chrismaree.dev"
+# Override settings for local testing
+baseurl: ""  # Empty for local testing
+url: "http://localhost:8000"
+
+# For GitHub Pages project site (uncomment when deploying)
+# baseurl: "/PersonalWebsite"  # This is for GitHub Pages project site
+# url: "https://chrismaree.github.io"
+
+# For custom domain (if you set this up later)
+# baseurl: ""  # Empty for custom domain
+# url: "https://chrismaree.dev"

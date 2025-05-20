@@ -4,22 +4,22 @@
   date: 2025
   event: AfrikaBurn 2025
   images:
-    - path: /images/create/string_thingi/2025-05-19 13.49.45.jpg
+    - path: images/create/string_thingi/2025-05-19 13.49.45.jpg
       title: Nocturnal Illumination
       description: The installation comes alive at night as UV lights reveal the fluorescent patterns, creating an otherworldly glow that transforms the entire structure.
-    - path: /images/create/string_thingi/IMG_3577 Copy.JPG
+    - path: images/create/string_thingi/IMG_3577 Copy.JPG
       title: Sacred Geometry I
       description: A complex geometric pattern emerges from simple string lines, creating a mandala-like form that invites contemplation.
-    - path: /images/create/string_thingi/IMG_3581 Copy.JPG
+    - path: images/create/string_thingi/IMG_3581 Copy.JPG
       title: Dimensional Study
       description: Layered string work that creates the illusion of depth and movement when viewed from different angles.
-    - path: /images/create/string_thingi/IMG_3583.jpg
+    - path: images/create/string_thingi/IMG_3583.jpg
       title: Tensile Structure
       description: Exploring the balance between tension and harmony through intersecting string patterns.
-    - path: /images/create/string_thingi/IMG_3626 Copy.JPG
+    - path: images/create/string_thingi/IMG_3626 Copy.JPG
       title: Convergence
       description: Lines converge and diverge in this string installation, creating focal points that shift as you move around the piece.
-    - path: /images/create/string_thingi/IMG_4760.jpeg
+    - path: images/create/string_thingi/IMG_4760.jpeg
       title: Woven Light
       description: String catches and plays with light, creating a delicate interplay between material and illumination.
 
@@ -29,16 +29,16 @@
   date: 2024
   event: AfrikaBurn 2024
   images:
-    - path: /images/create/shadow_work/shadowwork1.JPG
+    - path: images/create/shadow_work/shadowwork1.JPG
       title: Inner Reflections
       description: A visual meditation on the shadows we all carry within, revealing their transformative potential when exposed to different lighting conditions at AfrikaBurn.
-    - path: /images/create/shadow_work/shadowwork2.jpg
+    - path: images/create/shadow_work/shadowwork2.jpg
       title: Luminous Presence
       description: The installation casts an intricate pattern of light and shadow across the desert floor, with a solitary figure illuminated in red light contemplating the geometric forms.
-    - path: /images/create/shadow_work/shadowwork3.jpg
+    - path: images/create/shadow_work/shadowwork3.jpg
       title: Nocturnal Geometry
       description: Under the night sky, the structure's internal light source creates a kaleidoscopic shadow pattern that transforms the surrounding environment into a meditative space.
-    - path: /images/create/shadow_work/shadowwork4.jpg
+    - path: images/create/shadow_work/shadowwork4.jpg
       title: Journey to the Burn
       description: The dodecahedron structure in transit to AfrikaBurn, showcasing the daylight appearance of the intricate geometric cutouts before installation in the desert.
 
@@ -52,18 +52,18 @@
       title: Portal Experience
       description: A short walkthrough of the Galactic Entryway installation, showing how the portal effect creates a transition between spaces.
       type: youtube
-      thumbnail: /images/create/gelactic_entryway/videos/portal_thumbnail.jpg
+      thumbnail: images/create/gelactic_entryway/videos/portal_thumbnail.jpg
     - path: https://youtu.be/m56bMainKw4
       title: Light Dance
       description: Light interacting with the Galactic Entryway structure, creating mesmerizing patterns and visual rhythms.
       type: youtube
-      thumbnail: /images/create/gelactic_entryway/videos/light_thumbnail.jpg
+      thumbnail: images/create/gelactic_entryway/videos/light_thumbnail.jpg
     - path: https://youtu.be/mKP-IiQ7_Jg
       title: Night Transformation
       description: The Galactic Entryway comes alive at night, with illumination revealing new dimensions of the installation.
       type: youtube
-      thumbnail: /images/create/gelactic_entryway/videos/night_thumbnail.jpg
-    - path: /images/create/gelactic_entryway/IMG_7929.jpg
+      thumbnail: images/create/gelactic_entryway/videos/night_thumbnail.jpg
+    - path: images/create/gelactic_entryway/IMG_7929.jpg
       title: Threshold
       description: The entryway design creates an immersive experience that transforms the ordinary into the extraordinary, inviting participants to cross over into new possibilities.
 
@@ -77,18 +77,18 @@
       title: Entering the Realm Experience
       description: A walkthrough of the interactive dome installation that explores moral choices and ethical dilemmas through light and sound.
       type: youtube
-      thumbnail: /images/create/entering_the_realm/realm_thumbnail.jpg
+      thumbnail: images/create/entering_the_realm/realm_thumbnail.jpg
     - path: https://youtu.be/a5TzbdOeiTw
       title: Entering the Realm Visual Journey
       description: Visual exploration of the immersive light and sound experience within the geodesic dome structure.
       type: youtube
-      thumbnail: /images/create/entering_the_realm/realm_visual_thumbnail.jpg
+      thumbnail: images/create/entering_the_realm/realm_visual_thumbnail.jpg
     - path: https://youtube.com/shorts/IpiiZ7RnxOM
       title: Entering the Realm Installation
       description: Short clip showcasing the dome installation during the Kiez Burn festival, highlighting the interactive elements and visitor engagement.
       type: youtube
-      thumbnail: /images/create/entering_the_realm/realm_shorts_thumbnail.jpg
-    - path: /images/create/romanesco_realm/IMG_8568.jpg
+      thumbnail: images/create/entering_the_realm/realm_shorts_thumbnail.jpg
+    - path: images/create/romanesco_realm/IMG_8568.jpg
       title: Inside the Dome
       description: Interior view of the geodesic dome structure, showing the immersive light installation that creates the experiential journey.
 
@@ -98,19 +98,19 @@
   date: 2022
   event: AfrikaBurn 2022
   images:
-    - path: /images/create/duckeract/IMG_4687.JPG
+    - path: images/create/duckeract/IMG_4687.JPG
       title: Duckeract Genesis
       description: The first in the series, exploring the transition from organic form to geometric abstraction.
-    - path: /images/create/duckeract/IMG_4700.JPG
+    - path: images/create/duckeract/IMG_4700.JPG
       title: Cubic Waterfowl
       description: A study in contrasts between the playful essence of a duck and the rigid structure of cubic form.
-    - path: /images/create/duckeract/IMG_4704.JPG
+    - path: images/create/duckeract/IMG_4704.JPG
       title: Dimensional Duck
       description: Exploring how light and shadow interact with the duck form when constrained by geometric principles.
-    - path: /images/create/duckeract/IMG_4706.JPG
+    - path: images/create/duckeract/IMG_4706.JPG
       title: Tesseract Quack
       description: A fourth-dimensional exploration of the duck form, suggesting movement between planes of existence.
-    - path: /images/create/duckeract/IMG_4715.JPG
+    - path: images/create/duckeract/IMG_4715.JPG
       title: Quantum Duck
       description: The final piece in the series, representing the duck in multiple states simultaneously.
 
@@ -124,37 +124,37 @@
       title: East London Speed
       description: Aerial footage filmed in East London, South Africa, showcasing the coastal beauty and dynamic landscapes from above.
       type: youtube
-      thumbnail: /images/create/drone/speed_thumbnail.jpg
+      thumbnail: images/create/drone/speed_thumbnail.jpg
     - path: https://youtu.be/HvupyIxWVo4
       title: Dullstroom River
       description: Exploring the serene waters of Dullstroom River in South Africa with a DJI FPV Drone.
       type: youtube
-      thumbnail: /images/create/drone/dronetherapy_thumbnail.jpg
+      thumbnail: images/create/drone/dronetherapy_thumbnail.jpg
     - path: https://youtu.be/bEEa8-0H2Ks
       title: Kenton on Sea
       description: FPV drone flight capturing the stunning coastal views of Kenton on Sea.
       type: youtube
-      thumbnail: /images/create/drone/atlantis_thumbnail.jpg
+      thumbnail: images/create/drone/atlantis_thumbnail.jpg
     - path: https://youtu.be/DkTInF4OwBM
       title: Freestyle FPV
       description: 6s Titan DC5 freestyle FPV drone footage captured with GoPro Hero 8.
       type: youtube
-      thumbnail: /images/create/drone/scarborough_thumbnail.jpg
-    - path: /images/create/drone/drone1.jpeg
+      thumbnail: images/create/drone/scarborough_thumbnail.jpg
+    - path: images/create/drone/drone1.jpeg
       title: Coastal Perspective
       description: Aerial view of a stunning coastline revealing the dance between land and sea.
-    - path: /images/create/drone/drone2.jpg
+    - path: images/create/drone/drone2.jpg
       title: Natural Geometry
       description: From above, nature's intricate designs become visible, showcasing patterns that are invisible from the ground.
-    - path: /images/create/drone/drone3.jpg
+    - path: images/create/drone/drone3.jpg
       title: Desert Mirage
       description: The shifting sands create beautiful abstractions when viewed from high above, blurring the line between reality and imagination.
-    - path: /images/create/drone/drone4.jpg
+    - path: images/create/drone/drone4.jpg
       title: Camps Bay Aerial
       description: The iconic Camps Bay coastline seen from a perspective that reveals the perfect harmony between mountain and sea.
-    - path: /images/create/drone/drone5.jpg
+    - path: images/create/drone/drone5.jpg
       title: Tranquil Waters
       description: The gentle interplay of light and water creates a mesmerizing tapestry of colors and reflections.
-    - path: /images/create/drone/drone6.jpg
+    - path: images/create/drone/drone6.jpg
       title: Emerald Shores
       description: The vivid green algae along the rocky coastline creates a surreal, otherworldly landscape that seems almost digital in nature.

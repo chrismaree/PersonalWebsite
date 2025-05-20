@@ -14,7 +14,7 @@
   
 - name: TriggerWard
   date: 2024
-  link: www.triggerward.com
+  link: triggerward.com
   github: trigger-finance/trigger-ward
   description: |
     Built at ETH Berlin 2024, TriggerWard is a privacy-focused financial toolkit that enables users to create and execute secure, private transactions using zero-knowledge proofs. The project addresses key challenges in blockchain privacy and programmable finance.

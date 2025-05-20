@@ -1,9 +1,3 @@
 [build]
-  command = "bundle update --bundler && rm -f Gemfile.lock && bundle install && bundle exec jekyll build"
+  command = "true"
   publish = "_site/"
-
-[build.environment]
-  RUBY_VERSION = "2.7.5"
-
-[[plugins]]
-  package = "@netlify/plugin-ruby-bundler"

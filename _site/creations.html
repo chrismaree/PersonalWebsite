@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang=" en "><head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,14 +8,14 @@
 <meta name="generator" content="Jekyll v3.9.5" />
 <meta property="og:title" content="Creations" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://localhost:8000/creations.html" />
-<meta property="og:url" content="http://localhost:8000/creations.html" />
+<link rel="canonical" href="http://localhost:4000/creations.html" />
+<meta property="og:url" content="http://localhost:4000/creations.html" />
 <meta property="og:site_name" content="Full-stack tinkerer building in crypto, open source, and mechanism design. Driven to create." />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Creations" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","headline":"Creations","url":"http://localhost:8000/creations.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","headline":"Creations","url":"http://localhost:4000/creations.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/css/custom-icons.css">
@@ -73,7 +72,7 @@
             <!-- Scrolling list of creations ordered by date -->
             
             
-              <div class="creation-section">
+              <div class="creation-section" id="string_thingi">
                 <div class="creation-header">
                   <h2 class="creation-category-title">String-thingi</h2>
                   
@@ -159,7 +158,7 @@
                 </div>
               </div>
             
-              <div class="creation-section">
+              <div class="creation-section" id="shadow_work">
                 <div class="creation-header">
                   <h2 class="creation-category-title">Shadow Work</h2>
                   
@@ -221,7 +220,7 @@
                 </div>
               </div>
             
-              <div class="creation-section">
+              <div class="creation-section" id="entering_the_realm">
                 <div class="creation-header">
                   <h2 class="creation-category-title">Entering the Realm</h2>
                   
@@ -298,7 +297,7 @@
                 </div>
               </div>
             
-              <div class="creation-section">
+              <div class="creation-section" id="gelactic_entryway">
                 <div class="creation-header">
                   <h2 class="creation-category-title">Galactic Entryway</h2>
                   
@@ -375,7 +374,7 @@
                 </div>
               </div>
             
-              <div class="creation-section">
+              <div class="creation-section" id="duckeract">
                 <div class="creation-header">
                   <h2 class="creation-category-title">Duckeract</h2>
                   
@@ -449,7 +448,7 @@
                 </div>
               </div>
             
-              <div class="creation-section">
+              <div class="creation-section" id="drone">
                 <div class="creation-header">
                   <h2 class="creation-category-title">Drone Photography</h2>
                   
@@ -628,6 +627,37 @@
   
   <script>
     document.addEventListener('DOMContentLoaded', function() {
+      // Handle deep links with smooth scrolling
+      function scrollToArtwork() {
+        const hash = window.location.hash;
+        if (hash) {
+          const element = document.querySelector(hash);
+          if (element) {
+            // Add offset for header (adjust value as needed)
+            const headerOffset = 100;
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+            
+            // Add a temporary highlight effect
+            element.style.transition = 'background-color 0.5s ease';
+            element.style.backgroundColor = 'rgba(255, 255, 0, 0.1)';
+            setTimeout(() => {
+              element.style.backgroundColor = '';
+            }, 2000);
+          }
+        }
+      }
+      
+      // Scroll to artwork on page load
+      scrollToArtwork();
+      
+      // Handle hash changes for single page navigation
+      window.addEventListener('hashchange', scrollToArtwork);
       // Gallery functionality - simplified and more robust
       function initGallery() {
         const gallery = document.querySelector('.fullscreen-gallery');

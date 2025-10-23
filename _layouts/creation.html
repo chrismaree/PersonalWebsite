@@ -21,7 +21,7 @@
             <!-- Scrolling list of creations ordered by date -->
             {% assign sorted_creations = site.data.creations | sort: 'date' | reverse %}
             {% for creation in sorted_creations %}
-              <div class="creation-section">
+              <div class="creation-section" id="{{ creation.type }}">
                 <div class="creation-header">
                   <h2 class="creation-category-title">{{ creation.title }}</h2>
                   {% if creation.event %}
@@ -91,6 +91,37 @@
   
   <script>
     document.addEventListener('DOMContentLoaded', function() {
+      // Handle deep links with smooth scrolling
+      function scrollToArtwork() {
+        const hash = window.location.hash;
+        if (hash) {
+          const element = document.querySelector(hash);
+          if (element) {
+            // Add offset for header (adjust value as needed)
+            const headerOffset = 100;
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+            
+            // Add a temporary highlight effect
+            element.style.transition = 'background-color 0.5s ease';
+            element.style.backgroundColor = 'rgba(255, 255, 0, 0.1)';
+            setTimeout(() => {
+              element.style.backgroundColor = '';
+            }, 2000);
+          }
+        }
+      }
+      
+      // Scroll to artwork on page load
+      scrollToArtwork();
+      
+      // Handle hash changes for single page navigation
+      window.addEventListener('hashchange', scrollToArtwork);
       // Gallery functionality - simplified and more robust
       function initGallery() {
         const gallery = document.querySelector('.fullscreen-gallery');

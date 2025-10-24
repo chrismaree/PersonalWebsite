@@ -23,7 +23,7 @@
             {% for creation in sorted_creations %}
               <div class="creation-section" id="{{ creation.type }}">
                 <div class="creation-header">
-                  <h2 class="creation-category-title">{{ creation.title }}</h2>
+                  <h2 class="creation-category-title clickable-heading" data-creation-id="{{ creation.type }}" title="Click to copy link to this artwork">{{ creation.title }}<span class="link-icon">🔗</span></h2>
                   {% if creation.event %}
                   <span class="creation-date">{{ creation.event }}</span>
                   {% endif %}
@@ -354,8 +354,82 @@
       
       // Initialize gallery
       initGallery();
+      
+      // Click to copy deep link functionality
+      document.querySelectorAll('.creation-category-title').forEach(heading => {
+        heading.addEventListener('click', function(e) {
+          e.preventDefault();
+          const creationId = this.dataset.creationId;
+          const deepLink = `${window.location.origin}${window.location.pathname}#${creationId}`;
+          
+          // Copy to clipboard
+          navigator.clipboard.writeText(deepLink).then(() => {
+            // Show feedback
+            const originalText = this.innerHTML;
+            this.innerHTML = this.textContent + ' <span class="copy-feedback">✓ Link copied!</span>';
+            
+            setTimeout(() => {
+              this.innerHTML = originalText;
+            }, 2000);
+          }).catch(err => {
+            console.error('Failed to copy link:', err);
+            // Fallback: show the link
+            const originalText = this.innerHTML;
+            this.innerHTML = this.textContent + ` <span class="copy-feedback" style="font-size: 0.8em;">${deepLink}</span>`;
+            
+            setTimeout(() => {
+              this.innerHTML = originalText;
+            }, 3000);
+          });
+        });
+      });
     });
   </script>
+  
+  <style>
+    /* Click to copy deep link styles */
+    .creation-category-title.clickable-heading {
+      cursor: pointer;
+      position: relative;
+      transition: color 0.2s ease;
+    }
+    
+    .creation-category-title.clickable-heading:hover {
+      color: #0366d6;
+    }
+    
+    .link-icon {
+      display: none;
+      margin-left: 8px;
+      font-size: 0.7em;
+      opacity: 0.5;
+      vertical-align: middle;
+    }
+    
+    .creation-category-title.clickable-heading:hover .link-icon {
+      display: inline;
+    }
+    
+    .copy-feedback {
+      color: #28a745;
+      font-size: 0.8em;
+      margin-left: 10px;
+      font-weight: normal;
+      animation: fadeIn 0.3s ease;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    /* Mobile-friendly touch target */
+    @media (max-width: 768px) {
+      .creation-category-title.clickable-heading {
+        padding: 10px 0;
+      }
+    }
+  </style>
 
   {%- include footer.html -%}
 
